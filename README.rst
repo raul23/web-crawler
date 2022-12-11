@@ -1,5 +1,5 @@
 ===========
-Web crawler
+Web scraper
 ===========
 .. contents:: **Contents**
    :depth: 4
