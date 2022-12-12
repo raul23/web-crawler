@@ -79,8 +79,8 @@ Showing the first 4 URLs in the list::
    
    ['https://en.wikipedia.org//wiki/Alexei_Abrikosov_(physicist)', 'https://en.wikipedia.org//wiki/Vadym_Adamyan', 'https://en.wikipedia.org//wiki/David_Adler_(physicist)', 'https://en.wikipedia.org//wiki/Diederik_Aerts']
 
-2. Download theoretical physicists' Wikipedia pages
-'''''''''''''''''''''''''''''''''''''''''''''''''''
+2. Download Wikipedia pages of theoretical physicists'
+''''''''''''''''''''''''''''''''''''''''''''''''''''''
 From the `previous list <#get-list-of-urls-to-theoretical-physicists-wikipedia-pages>`_ of URLs to Wikipedia pages, download each page.
 
 3. Extract DOB and DOD from Wikipedia pages
