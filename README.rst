@@ -61,3 +61,9 @@ Get list of URLs to theoretical physicists' Wikipedia pages
     # number of bytes in a megabyte
     MBFACTOR = float(1 << 20)
     print(f'Total bytes downloaded: {bytes_downloaded} [{round(bytes_downloaded/MBFACTOR, 2)} MB]')
+
+Showing the first 4 URLs in the list::
+
+   ipdb> list_physicists_urls[:4]
+   
+   ['https://en.wikipedia.org//wiki/Alexei_Abrikosov_(physicist)', 'https://en.wikipedia.org//wiki/Vadym_Adamyan', 'https://en.wikipedia.org//wiki/David_Adler_(physicist)', 'https://en.wikipedia.org//wiki/Diederik_Aerts']
