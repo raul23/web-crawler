@@ -8,6 +8,8 @@ Web crawler + scraper
 
 Web crawler
 ===========
+Exercises
+---------
 Download theoretical physicists' Wikipedia pages
 ''''''''''''''''''''''''''''''''''''''''''''''''
 From the `list <#get-list-of-urls-to-theoretical-physicists-wikipedia-pages>`_ of URLs to Wikipedia pages, download each page.
