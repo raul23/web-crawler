@@ -87,3 +87,8 @@ Showing the first 4 URLs in the list::
    ipdb> list_physicists_urls[:4]
    
    ['https://en.wikipedia.org//wiki/Alexei_Abrikosov_(physicist)', 'https://en.wikipedia.org//wiki/Vadym_Adamyan', 'https://en.wikipedia.org//wiki/David_Adler_(physicist)', 'https://en.wikipedia.org//wiki/Diederik_Aerts']
+
+Download theoretical physicists' Wikipedia pages
+''''''''''''''''''''''''''''''''''''''''''''''''
+From the list generated `previously <>`_ of URLs to Wikipedia pages, download each page.
+
