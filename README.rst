@@ -8,15 +8,8 @@ Web crawler + scraper
 
 Exercises
 ---------
-Extract DOB and DOD from Wikipedia pages
-''''''''''''''''''''''''''''''''''''''''
-`:information_source:`
-
-  - **DOB:** *Date of Birth*
-  - **DOD:** *Date of Death*
-
-Get list of URLs to theoretical physicists' Wikipedia pages
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+1. Get list of URLs to theoretical physicists' Wikipedia pages
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Starting from `Category:Theoretical physicists <https://en.wikipedia.org/w/index.php?title=Category:Theoretical_physicists>`_, get all the absolute URLs to theoretical physicists' Wikipedia pages by processing the list of relative URLs in the section **Pages in category "Theoretical physicists"** and crawling through the next pages until no more *next page* found.
 
 .. code-block:: python
@@ -86,6 +79,14 @@ Showing the first 4 URLs in the list::
    
    ['https://en.wikipedia.org//wiki/Alexei_Abrikosov_(physicist)', 'https://en.wikipedia.org//wiki/Vadym_Adamyan', 'https://en.wikipedia.org//wiki/David_Adler_(physicist)', 'https://en.wikipedia.org//wiki/Diederik_Aerts']
 
-Download theoretical physicists' Wikipedia pages
-''''''''''''''''''''''''''''''''''''''''''''''''
+2. Download theoretical physicists' Wikipedia pages
+'''''''''''''''''''''''''''''''''''''''''''''''''''
 From the `previous list <#get-list-of-urls-to-theoretical-physicists-wikipedia-pages>`_ of URLs to Wikipedia pages, download each page.
+
+3. Extract DOB and DOD from Wikipedia pages
+'''''''''''''''''''''''''''''''''''''''''''
+`:information_source:`
+
+  - **DOB:** *Date of Birth*
+  - **DOD:** *Date of Death*
+  
