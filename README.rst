@@ -1,16 +1,16 @@
-===========
-Web scraper
-===========
+=====================
+Web crawler + scraper
+=====================
 .. contents:: **Contents**
    :depth: 4
    :local:
    :backlinks: top
 
 Exercises
-=========
-Get list of URLs to theoretical physicists' Wikipedia pages
------------------------------------------------------------
-Starting from `Category:Theoretical physicists <https://en.wikipedia.org/w/index.php?title=Category:Theoretical_physicists>`_, get all the absolute URLs to theoretical physicists' Wikipedia pages by processing the list of URLs in the section **Pages in category "Theoretical physicists"** and crawling through the next pages until no more *next page* found.
+---------
+1. Get list of URLs of theoretical physicists' Wikipedia pages
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Starting from `Category:Theoretical physicists <https://en.wikipedia.org/w/index.php?title=Category:Theoretical_physicists>`_, get all the absolute URLs of theoretical physicists' Wikipedia pages by processing the list of relative URLs in the section **Pages in category "Theoretical physicists"** and crawling through the next pages until no more *next page* found.
 
 .. code-block:: python
 
@@ -71,8 +71,22 @@ Starting from `Category:Theoretical physicists <https://en.wikipedia.org/w/index
    MBFACTOR = float(1 << 20)
    print(f'Total bytes downloaded: {bytes_downloaded} [{round(bytes_downloaded/MBFACTOR, 2)} MB]')
 
+Python script can be found at `get_physicists_urls.py <https://github.com/raul23/web-scraper/blob/main/webscraper/exercises/get_physicists_urls.py>`_
+
 Showing the first 4 URLs in the list::
 
    ipdb> list_physicists_urls[:4]
    
    ['https://en.wikipedia.org//wiki/Alexei_Abrikosov_(physicist)', 'https://en.wikipedia.org//wiki/Vadym_Adamyan', 'https://en.wikipedia.org//wiki/David_Adler_(physicist)', 'https://en.wikipedia.org//wiki/Diederik_Aerts']
+
+2. Download Wikipedia pages
+'''''''''''''''''''''''''''
+From the `previous list <#get-list-of-urls-to-theoretical-physicists-wikipedia-pages>`_ of URLs to Wikipedia pages, download each page along with the image in the INFO box.
+
+3. Extract DOB and DOD from Wikipedia pages
+'''''''''''''''''''''''''''''''''''''''''''
+`:information_source:`
+
+  - **DOB:** *Date of Birth*
+  - **DOD:** *Date of Death*
+  
