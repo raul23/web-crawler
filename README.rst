@@ -10,7 +10,7 @@ Exercises
 =========
 Get list of URLs to theoretical physicists' Wikipedia pages
 -----------------------------------------------------------
-Starting from `Category:Theoretical physicists <https://en.wikipedia.org/w/index.php?title=Category:Theoretical_physicists>`_, get all the absolute URLs to theoretical physicists' Wikipedia pages by processing the list of URLs in the section **Pages in category "Theoretical physicists"** and crawling through the next pages until no more *next page* found.
+Starting from `Category:Theoretical physicists <https://en.wikipedia.org/w/index.php?title=Category:Theoretical_physicists>`_, get all the absolute URLs to theoretical physicists' Wikipedia pages by processing the list of relative URLs in the section **Pages in category "Theoretical physicists"** and crawling through the next pages until no more *next page* found.
 
 .. code-block:: python
 
