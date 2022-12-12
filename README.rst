@@ -71,6 +71,8 @@ Starting from `Category:Theoretical physicists <https://en.wikipedia.org/w/index
    MBFACTOR = float(1 << 20)
    print(f'Total bytes downloaded: {bytes_downloaded} [{round(bytes_downloaded/MBFACTOR, 2)} MB]')
 
+Python script can be found at `get_physicists_urls.py <https://github.com/raul23/web-scraper/blob/main/webscraper/exercises/get_physicists_urls.py>`_
+
 Showing the first 4 URLs in the list::
 
    ipdb> list_physicists_urls[:4]
