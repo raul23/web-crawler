@@ -10,6 +10,8 @@ Exercises
 =========
 Get list of URLs to theoretical physicists' Wikipedia pages
 -----------------------------------------------------------
+Starting from `Category:Theoretical physicists <https://en.wikipedia.org/w/index.php?title=Category:Theoretical_physicists>`_, get all the absolute URLs to theoretical physicists' Wikipedia pages by processing the list of URLs in the section **Pages in category "Theoretical physicists"** and crawling through the next pages until no more *next page* found.
+
 .. code-block:: python
 
    import time
@@ -17,7 +19,7 @@ Get list of URLs to theoretical physicists' Wikipedia pages
    from bs4 import BeautifulSoup
 
    # Delay between HTTP requests (in seconds)
-   delay_requests = 1
+   DELAY_REQUESTS = 1
    list_physicists_urls = []
    domain = 'https://en.wikipedia.org/'
    bytes_downloaded = 0
@@ -55,7 +57,7 @@ Get list of URLs to theoretical physicists' Wikipedia pages
        # If a 'next' category page was found to be processed
        if more_cat_page:
            now = time.time()
-           sleep_time = delay_requests - (now - start)
+           sleep_time = DELAY_REQUESTS - (now - start)
            print(f'Sleeping for {round(sleep_time, 3)} second')
            time.sleep(sleep_time)
        else:
@@ -64,7 +66,8 @@ Get list of URLs to theoretical physicists' Wikipedia pages
            break
 
    print(f"\n{len(list_physicists_urls)} URLs found")
-   # number of bytes in a megabyte
+   # Number of bytes in a megabyte
+   # ref.: https://stackoverflow.com/a/40957594
    MBFACTOR = float(1 << 20)
    print(f'Total bytes downloaded: {bytes_downloaded} [{round(bytes_downloaded/MBFACTOR, 2)} MB]')
 
