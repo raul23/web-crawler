@@ -90,5 +90,5 @@ Showing the first 4 URLs in the list::
 
 Download theoretical physicists' Wikipedia pages
 ''''''''''''''''''''''''''''''''''''''''''''''''
-From the list generated `previously <>`_ of URLs to Wikipedia pages, download each page.
+From the list generated `previously <#get-list-of-urls-to-theoretical-physicists-wikipedia-pages>`_ of URLs to Wikipedia pages, download each page.
 
