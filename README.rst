@@ -6,16 +6,6 @@ Web crawler + scraper
    :local:
    :backlinks: top
 
-Web crawler
-===========
-Exercises
----------
-Download theoretical physicists' Wikipedia pages
-''''''''''''''''''''''''''''''''''''''''''''''''
-From the `list <#get-list-of-urls-to-theoretical-physicists-wikipedia-pages>`_ of URLs to Wikipedia pages, download each page.
-
-Web scraper
-===========
 Exercises
 ---------
 Extract DOB and DOD from Wikipedia pages
@@ -95,3 +85,7 @@ Showing the first 4 URLs in the list::
    ipdb> list_physicists_urls[:4]
    
    ['https://en.wikipedia.org//wiki/Alexei_Abrikosov_(physicist)', 'https://en.wikipedia.org//wiki/Vadym_Adamyan', 'https://en.wikipedia.org//wiki/David_Adler_(physicist)', 'https://en.wikipedia.org//wiki/Diederik_Aerts']
+
+Download theoretical physicists' Wikipedia pages
+''''''''''''''''''''''''''''''''''''''''''''''''
+From the `previous list <#get-list-of-urls-to-theoretical-physicists-wikipedia-pages>`_ of URLs to Wikipedia pages, download each page.
