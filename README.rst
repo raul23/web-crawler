@@ -21,7 +21,7 @@ Starting from `Category:Theoretical physicists <https://en.wikipedia.org/w/index
    # Delay between HTTP requests (in seconds)
    DELAY_REQUESTS = 1
    list_physicists_urls = []
-   domain = 'https://en.wikipedia.org/'
+   domain = 'https://en.wikipedia.org'
    bytes_downloaded = 0
    # Pages in category "Theoretical physicists"
    cat_page_url = 'https://en.wikipedia.org/w/index.php?title=Category:Theoretical_physicists'
@@ -71,7 +71,7 @@ Starting from `Category:Theoretical physicists <https://en.wikipedia.org/w/index
    MBFACTOR = float(1 << 20)
    print(f'Total bytes downloaded: {bytes_downloaded} [{round(bytes_downloaded/MBFACTOR, 2)} MB]')
 
-Python script can be found at `get_physicists_urls.py <https://github.com/raul23/web-scraper/blob/main/webscraper/exercises/get_physicists_urls.py>`_
+Python script can be found at `get_physicists_urls.py <https://github.com/raul23/web-crawler/blob/main/exercises/get_physicists_urls.py>`_
 
 Showing the first 4 URLs in the list::
 
