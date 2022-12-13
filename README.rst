@@ -81,7 +81,7 @@ Showing the first 4 URLs in the list::
 
 2. Download Wikipedia pages
 '''''''''''''''''''''''''''
-From the `previous list <#get-list-of-urls-to-theoretical-physicists-wikipedia-pages>`_ of URLs to Wikipedia pages, download each page along with the image in the INFO box.
+From the `previous list <#get-list-of-urls-to-theoretical-physicists-wikipedia-pages>`_ of URLs to Wikipedia pages, download each page along with the image in the INFO box if it is found.
 
 3. Extract DOB and DOD from Wikipedia pages
 '''''''''''''''''''''''''''''''''''''''''''
