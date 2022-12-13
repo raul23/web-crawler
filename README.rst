@@ -119,8 +119,8 @@ Here are the general steps for downloading the Wikipedia pages with the correspo
    <p align="center"><img src="./images/ex2_output.png"></p>
    <p align="center"><img src="./images/wikipedia_directory.png"></p>
 
-3. Extract DOB and DOD from Wikipedia pages
-'''''''''''''''''''''''''''''''''''''''''''
+3. Extract DOB and DOD from Wikipedia pages [TODO]
+''''''''''''''''''''''''''''''''''''''''''''''''''
 `:information_source:`
 
   - **DOB:** *Date of Birth*
@@ -128,8 +128,8 @@ Here are the general steps for downloading the Wikipedia pages with the correspo
 
 `:warning:` TODO
 
-4. Extract more information from the information box
-''''''''''''''''''''''''''''''''''''''''''''''''''''
+4. Extract more information from the information box [TODO]
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Apart from the *DOB* and *DOD*, there are more information that can be extracted from the information box associated with physicists such as:
 
 - Place of birth and death
