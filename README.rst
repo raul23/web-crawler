@@ -83,7 +83,7 @@ Showing the first 4 URLs in the list::
   - The Python script requires the ``BeautifulSoup`` library which can be installed with:
   
     ``pip install pip install beautifulsoup4``
-  - The Python script saves the list of URLs as a pickle file if given the 's' option to the script: 
+  - The Python script saves the list of URLs as a pickle file if given the 's' option when running the script: 
   
     ``python get_physicists_urls.py s``
 
