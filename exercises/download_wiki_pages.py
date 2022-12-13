@@ -3,7 +3,7 @@ import os
 import pickle
 import time
 from logging import NullHandler
-from urllib.parse import urlparse
+from urllib.parse import unquote, urlparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -13,11 +13,11 @@ import ipdb
 USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) ' \
              'Chrome/95.0.4638.54 Safari/537.36 RuxitSynthetic/1.0 v3029941779778713443 ' \
              't1946166402082625254 athf552e454 altpriv cvcv=2 smf=0'
-ACCEPT = 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+# ACCEPT = 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
 ACCEPT_ENCODING = None
 HTTP_TIMEOUT = 5
 HEADERS = {'User-Agent': USER_AGENT,
-           'Accept': ACCEPT,
+           # 'Accept': ACCEPT,
            'Accept-Encoding': ACCEPT_ENCODING,
            'Content-Encoding': 'gzip'}
 DELAY_REQUESTS = 2
@@ -135,11 +135,12 @@ def download_image(session, page_url, tag):
     src_image = tag[0].find('img')['src']
     if src_image.startswith('//'):
         logger.debug('Image found in the Wikipedia page')
-        url_image = 'http:' + src_image
-        req = get_response(session, url_image, HEADERS, HTTP_TIMEOUT)
+        image_url = 'http:' + src_image
+        req = get_response(session, image_url, HEADERS, HTTP_TIMEOUT)
         START_TIME = time.time()
         if req is not None:
-            filename = urlparse(url_image).path.split('/')[-1].split(':')[-1]
+            ext = '.' + image_url.split('.')[-1]
+            filename = urlparse(page_url).path.split('/')[-1].split(':')[-1] + ext
             filepath = os.path.join(SAVE_DIRPATH, filename)
             with open(filepath, 'wb') as f:
                 f.write(req.content)
@@ -149,8 +150,8 @@ def download_image(session, page_url, tag):
             logger.debug(f'{msg}: {filepath}')
         else:
             logger.error('ConnectionError: request is None')
-            print(yellow(f"Image couldn't be downloaded: {url_image}"))
-            URLS_INFO['urls_status'][page_url].setdefault('status_image', f'ConnectionError: {url_image}')
+            print(yellow(f"Image couldn't be downloaded: {image_url}"))
+            URLS_INFO['urls_status'][page_url].setdefault('status_image', f'ConnectionError: {image_url}')
             URLS_INFO['images_not_downloaded'].add(page_url)
     else:
         msg = f'Unsupported image found in the Wikipedia page: {src_image}'
@@ -211,11 +212,10 @@ def get_response(session, url, headers, timeout):
 
 
 def setup_log():
-    logger.setLevel(logging.DEBUG)
+    logger.setLevel(logging.WARNING)
     # Create console handler and set level
     ch = logging.StreamHandler()
     ch.setLevel(logging.DEBUG)
-
     # Create formatter
     formatters = {
         'console': 'format": "%(name)-{auto_field_width}s | %(levelname)-8s | %(message)s',
@@ -225,10 +225,8 @@ def setup_log():
         'verbose': '%(asctime)s | %(name)-{auto_field_width}s | %(levelname)-8s | %(message)s'
     }
     formatter = logging.Formatter(formatters['simple'])
-
     # Add formatter to ch
     ch.setFormatter(formatter)
-
     # Add ch to logger
     logger.addHandler(ch)
 
@@ -254,6 +252,7 @@ def download_pages():
     logger.info(f'Number of URLs: {total_nb_urls}')
     print()
     for i, page_url in enumerate(list_physicists_urls):
+        page_url = unquote(page_url)
         print(f'processing url {i+1} of {total_nb_urls}: {page_url}')
         URLS_INFO['urls_status'].setdefault(page_url, {})
         URLS_INFO['urls_processed'].append(page_url)
