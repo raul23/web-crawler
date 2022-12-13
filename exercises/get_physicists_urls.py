@@ -63,7 +63,7 @@ while True:
 print(f"\n{len(list_physicists_urls)} URLs found")
 # number of bytes in a megabyte
 MBFACTOR = float(1 << 20)
-print(f'Total bytes downloaded: {bytes_downloaded} [{round(bytes_downloaded/MBFACTOR, 2)} MB]')
+print(f'Total bytes downloaded: {bytes_downloaded} [{round(bytes_downloaded/MBFACTOR, 2)} MiB]')
 # Save the list of URLs as a pickle file
 if save_list:
     filepath = os.path.expanduser('~/data/wikipedia/list_physicists_urls.pkl')
