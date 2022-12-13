@@ -130,7 +130,7 @@ Here are the general steps for downloading the Wikipedia pages with the correspo
 
 4. Extract more information from the information box
 ''''''''''''''''''''''''''''''''''''''''''''''''''''
-Apart from the DOB and DOD, there are more information that can be extracted from the information box associated with physicists such as:
+Apart from the *DOB* and *DOD*, there are more information that can be extracted from the information box associated with physicists such as:
 
 - Place of birth and death
 - Citizenship
