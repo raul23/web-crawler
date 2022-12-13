@@ -89,7 +89,7 @@ Showing the first 4 URLs in the list::
 
 2. Download Wikipedia pages
 '''''''''''''''''''''''''''
-From the `previous list <#get-list-of-urls-of-theoretical-physicists-wikipedia-pages>`_ of URLs to Wikipedia pages, download each page along with the image in the INFO box if it is found.
+From the `previous list <#get-list-of-urls-of-theoretical-physicists-wikipedia-pages>`_ of URLs to Wikipedia pages, download each page (html only) along with the image in the info box if it is found.
 
 `:information_source:`
 
@@ -109,6 +109,9 @@ Here are the general steps for downloading the Wikipedia pages with the correspo
    3. if no image is found in the info-box, then try to get it as a thumb picture (i.e. in a ``<div>`` tag with the ``thumbinner`` class): e.g. `Oriol Bohigas Martí <https://en.wikipedia.org/wiki/Oriol_Bohigas_Mart%C3%AD>`_ 
 3. Every Wikipedia page (html) and its corresponing image are saved locally within a directory as specified by the user
 4. Useful information for the casual user is printed in the console (important messages are colored, e.g. warning that an image couldn't be downloaded) and the logger hides the rest of the information useful for debugging
+
+.. https://archive.vn/mu9PH
+.. https://archive.vn/Na9fK
 
 .. raw:: html
 
