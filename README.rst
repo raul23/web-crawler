@@ -89,7 +89,7 @@ Showing the first 4 URLs in the list::
 
 2. Download Wikipedia pages
 '''''''''''''''''''''''''''
-From the `previous list <#get-list-of-urls-of-theoretical-physicists-wikipedia-pages>`_ of URLs to Wikipedia pages, download each page along with the image in the INFO box if it is found.
+From the `previous list <#get-list-of-urls-of-theoretical-physicists-wikipedia-pages>`_ of URLs to Wikipedia pages, download each page along with the image in the info box if it is found.
 
 `:information_source:`
 
