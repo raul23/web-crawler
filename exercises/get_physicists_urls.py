@@ -61,7 +61,7 @@ while True:
         break
 
 print(f"\n{len(list_physicists_urls)} URLs found")
-# number of bytes in a megabyte
+# number of bytes in a mebibyte
 MBFACTOR = float(1 << 20)
 print(f'Total bytes downloaded: {bytes_downloaded} [{round(bytes_downloaded/MBFACTOR, 2)} MiB]')
 # Save the list of URLs as a pickle file
