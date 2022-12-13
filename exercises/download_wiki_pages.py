@@ -163,6 +163,5 @@ except Exception as e:
     # print(err_msg)
     print(traceback.format_exc())
 # number of bytes in a megabyte
-ipdb.set_trace()
 MBFACTOR = float(1 << 20)
-print(f'Total bytes downloaded: {BYTES_DOWNLOADED} [{round(BYTES_DOWNLOADED/MBFACTOR, 2)} MB]')
+print(f'Total bytes downloaded: {BYTES_DOWNLOADED} [{round(BYTES_DOWNLOADED/MBFACTOR, 2)} MiB]')
