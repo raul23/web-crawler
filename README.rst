@@ -116,6 +116,7 @@ Here are the general steps for downloading the Wikipedia pages with the correspo
 .. raw:: html
 
    <p align="center"><img src="./images/ex2_output.png"></p>
+   <p align="center"><img src="./images/wikipedia_directory.png"></p>
 
 3. Extract DOB and DOD from Wikipedia pages
 '''''''''''''''''''''''''''''''''''''''''''
