@@ -162,6 +162,6 @@ except Exception as e:
     # err_msg = "{}: {}".format(str(e.__class__).split("'")[1], e)
     # print(err_msg)
     print(traceback.format_exc())
-# number of bytes in a megabyte
+# number of bytes in a mebibyte
 MBFACTOR = float(1 << 20)
 print(f'Total bytes downloaded: {BYTES_DOWNLOADED} [{round(BYTES_DOWNLOADED/MBFACTOR, 2)} MiB]')
