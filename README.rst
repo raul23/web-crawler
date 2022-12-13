@@ -71,17 +71,38 @@ Starting from `Category:Theoretical physicists <https://en.wikipedia.org/w/index
    MBFACTOR = float(1 << 20)
    print(f'Total bytes downloaded: {bytes_downloaded} [{round(bytes_downloaded/MBFACTOR, 2)} MiB]')
 
-Python script can be found at `get_physicists_urls.py <https://github.com/raul23/web-crawler/blob/main/exercises/get_physicists_urls.py>`_
-
 Showing the first 4 URLs in the list::
 
    ipdb> list_physicists_urls[:4]
    
    ['https://en.wikipedia.org//wiki/Alexei_Abrikosov_(physicist)', 'https://en.wikipedia.org//wiki/Vadym_Adamyan', 'https://en.wikipedia.org//wiki/David_Adler_(physicist)', 'https://en.wikipedia.org//wiki/Diederik_Aerts']
 
+`:information_source:`
+
+  - The Python script can be found at `get_physicists_urls.py <https://github.com/raul23/web-crawler/blob/main/exercises/get_physicists_urls.py>`_
+  - The Python script saves the list of URLs as a pickle file.
+
 2. Download Wikipedia pages
 '''''''''''''''''''''''''''
 From the `previous list <#get-list-of-urls-to-theoretical-physicists-wikipedia-pages>`_ of URLs to Wikipedia pages, download each page along with the image in the INFO box if it is found.
+
+`:information_source:`
+
+  The Python script can be found at `get_physicists_urls.py <https://github.com/raul23/web-crawler/blob/main/exercises/get_physicists_urls.py>`_ 
+
+Here are the general steps for downloading the Wikipedia pages with the corresponding images:
+
+1. Load the pickle file containing the list of URLs
+2. For each URL, 
+
+   1. download the associated Wikipedia page (html only) with the ``requests`` package,
+   2. download the corresponding image if it is found in the info box (i.e. in a ``<td>`` tag with the ``infobox-image`` class): e.g. `Alexei Abrikosov <https://en.wikipedia.org/wiki/Alexei_Abrikosov_(physicist)>`_
+   3. if no image is found in the info-box, then try to get it as a thumb picture (i.e. in a ``<div>`` tag with the ``thumbinner`` class): e.g. `Oriol Bohigas Martí <https://en.wikipedia.org/wiki/Oriol_Bohigas_Mart%C3%AD>`_ 
+3. Useful information for the casual user is printed in the console (with color if it is an important message, e.g. warning that an image couldn't be downloaded) and the logger hides the rest of the information useful for debugging
+
+.. raw:: html
+
+   <p align="center"><img src="./images/ex2_output.png"></p>
 
 3. Extract DOB and DOD from Wikipedia pages
 '''''''''''''''''''''''''''''''''''''''''''
