@@ -125,4 +125,28 @@ Here are the general steps for downloading the Wikipedia pages with the correspo
 
   - **DOB:** *Date of Birth*
   - **DOD:** *Date of Death*
-  
+
+`:warning:` TODO
+
+4. Extract more information from the information box
+''''''''''''''''''''''''''''''''''''''''''''''''''''
+Apart from the DOB and DOD, there are more information that can be extracted from the information box associated with physicists such as:
+
+- Place of birth and death
+- Citizenship
+- Alma mater
+- Known for
+- Awards
+- Fields
+- Institutions
+- Thesis
+- Doctoral advisor
+- Other academic advisors
+- Doctoral students
+- Other notable students
+- Influences
+- Influenced
+
+Some of these information can also be gleaned from other parts of the document.
+
+`:warning:` TODO
