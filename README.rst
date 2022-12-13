@@ -80,7 +80,9 @@ Showing the first 4 URLs in the list::
 `:information_source:`
 
   - The Python script can be found at `get_physicists_urls.py <https://github.com/raul23/web-crawler/blob/main/exercises/get_physicists_urls.py>`_
-  - The Python script saves the list of URLs as a pickle file if given the 's' option to the script, e.g. ``python get_physicists_urls.py s``
+  - The Python script saves the list of URLs as a pickle file if given the 's' option to the script: 
+  
+    ``python get_physicists_urls.py s``
 
 2. Download Wikipedia pages
 '''''''''''''''''''''''''''
