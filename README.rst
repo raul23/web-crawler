@@ -66,7 +66,7 @@ Starting from `Category:Theoretical physicists <https://en.wikipedia.org/w/index
            break
 
    print(f"\n{len(list_physicists_urls)} URLs found")
-   # Number of bytes in a megabyte
+   # Number of bytes in a mebibyte
    # ref.: https://stackoverflow.com/a/40957594
    MBFACTOR = float(1 << 20)
    print(f'Total bytes downloaded: {bytes_downloaded} [{round(bytes_downloaded/MBFACTOR, 2)} MiB]')
