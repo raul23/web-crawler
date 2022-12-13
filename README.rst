@@ -101,7 +101,7 @@ From the `previous list <#get-list-of-urls-of-theoretical-physicists-wikipedia-p
 
 Here are the general steps for downloading the Wikipedia pages with the corresponding images:
 
-1. Load the pickle file containing the list of URLs
+1. Load the pickle file containing the list of URLs which was generated from the `previous exercise <#get-list-of-urls-of-theoretical-physicists-wikipedia-pages>`_
 2. For each URL, 
 
    1. download the associated Wikipedia page (html only) with the ``requests`` package
