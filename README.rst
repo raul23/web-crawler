@@ -80,6 +80,9 @@ Showing the first 4 URLs in the list::
 `:information_source:`
 
   - The Python script can be found at `get_physicists_urls.py <https://github.com/raul23/web-crawler/blob/main/exercises/get_physicists_urls.py>`_
+  - The Python script requires the ``BeautifulSoup`` library which can be installed with:
+  
+    ``pip install pip install beautifulsoup4``
   - The Python script saves the list of URLs as a pickle file if given the 's' option to the script: 
   
     ``python get_physicists_urls.py s``
@@ -90,7 +93,11 @@ From the `previous list <#get-list-of-urls-of-theoretical-physicists-wikipedia-p
 
 `:information_source:`
 
-  The Python script can be found at `get_physicists_urls.py <https://github.com/raul23/web-crawler/blob/main/exercises/get_physicists_urls.py>`_ 
+  - The Python script can be found at `get_physicists_urls.py <https://github.com/raul23/web-crawler/blob/main/exercises/get_physicists_urls.py>`_ 
+  - The Python script requires the ``BeautifulSoup`` and ``requests`` libraries which can be installed with:
+  
+    - ``pip install beautifulsoup4``
+    - ``pip install requests``
 
 Here are the general steps for downloading the Wikipedia pages with the corresponding images:
 
