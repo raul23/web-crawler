@@ -93,7 +93,7 @@ From the `previous list <#get-list-of-urls-of-theoretical-physicists-wikipedia-p
 
 `:information_source:`
 
-  - The Python script can be found at `get_physicists_urls.py <https://github.com/raul23/web-crawler/blob/main/exercises/get_physicists_urls.py>`_ 
+  - The Python script can be found at `download_wiki_pages.py <https://github.com/raul23/web-crawler/blob/main/exercises/download_wiki_pages.py>`_ 
   - The Python script requires the ``BeautifulSoup`` and ``requests`` libraries which can be installed with:
   
     - ``pip install beautifulsoup4``
