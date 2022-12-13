@@ -147,6 +147,8 @@ Apart from the DOB and DOD, there are more information that can be extracted fro
 - Influences
 - Influenced
 
+See for example: `Wolfgang Pauli <https://en.wikipedia.org/wiki/Wolfgang_Pauli>`_
+
 Some of these information can also be gleaned from other parts of the document.
 
 `:warning:` TODO
