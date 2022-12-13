@@ -2,7 +2,6 @@ import logging
 import os
 import pickle
 import time
-import traceback
 from logging import NullHandler
 from urllib.parse import urlparse
 
@@ -23,7 +22,7 @@ HEADERS = {'User-Agent': USER_AGENT,
            'Content-Encoding': 'gzip'}
 DELAY_REQUESTS = 2
 MAIN_DIRPATH = os.path.expanduser('~/data/wikipedia/')
-SAVE_DIRPATH = os.path.join(MAIN_DIRPATH, 'method01')
+SAVE_DIRPATH = os.path.join(MAIN_DIRPATH, 'physicists')
 LIST_PICKLE_FILENAME = 'list_physicists_urls.pkl'
 BYTES_DOWNLOADED = 0
 URLS_INFO = {'urls_status': {},
