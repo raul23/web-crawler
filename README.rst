@@ -69,7 +69,7 @@ Starting from `Category:Theoretical physicists <https://en.wikipedia.org/w/index
    # Number of bytes in a megabyte
    # ref.: https://stackoverflow.com/a/40957594
    MBFACTOR = float(1 << 20)
-   print(f'Total bytes downloaded: {bytes_downloaded} [{round(bytes_downloaded/MBFACTOR, 2)} MB]')
+   print(f'Total bytes downloaded: {bytes_downloaded} [{round(bytes_downloaded/MBFACTOR, 2)} MiB]')
 
 Python script can be found at `get_physicists_urls.py <https://github.com/raul23/web-crawler/blob/main/exercises/get_physicists_urls.py>`_
 
