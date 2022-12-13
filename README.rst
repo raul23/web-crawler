@@ -98,6 +98,7 @@ From the `previous list <#get-list-of-urls-of-theoretical-physicists-wikipedia-p
   
     - ``pip install beautifulsoup4``
     - ``pip install requests``
+  - By default, there is a delay of 2 seconds between HTTP requests.
 
 Here are the general steps for downloading the Wikipedia pages with the corresponding images:
 
