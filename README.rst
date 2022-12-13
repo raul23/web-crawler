@@ -131,7 +131,7 @@ Here are the general steps for downloading the Wikipedia pages with the correspo
 4. Extract more information from the information box [TODO]
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 .. TODO: remove TODO in relative link eventually
-Apart from the *DOB* and *DOD* extracted `previously <extract-dob-and-dod-from-wikipedia-pages-todo>`_ from physicists' Wikipedia pages, there are more information that can be obtained from the information box:
+Apart from the *DOB* and *DOD* extracted `previously <#extract-dob-and-dod-from-wikipedia-pages-todo>`_ from physicists' Wikipedia pages, there are more information that can be obtained from the information box:
 
 - Place of birth and death
 - Citizenship
