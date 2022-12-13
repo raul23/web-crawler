@@ -110,6 +110,9 @@ Here are the general steps for downloading the Wikipedia pages with the correspo
 3. Every Wikipedia page (html) and its corresponing image are saved locally within a directory as specified by the user
 4. Useful information for the casual user is printed in the console (important messages are colored, e.g. warning that an image couldn't be downloaded) and the logger hides the rest of the information useful for debugging
 
+.. https://archive.vn/mu9PH
+.. https://archive.vn/Na9fK
+
 .. raw:: html
 
    <p align="center"><img src="./images/ex2_output.png"></p>
