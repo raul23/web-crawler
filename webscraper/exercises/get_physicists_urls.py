@@ -1,11 +1,19 @@
+import os
+import pickle
 import time
+import sys
 from urllib.request import urlopen
+
 from bs4 import BeautifulSoup
 
+args = sys.argv
+save_list = False
+if len(args) == 2 and args[1] == 's':
+    save_list = True
 # Delay between HTTP requests (in seconds)
 DELAY_REQUESTS = 1
 list_physicists_urls = []
-domain = 'https://en.wikipedia.org/'
+domain = 'https://en.wikipedia.org'
 bytes_downloaded = 0
 # Pages in category "Theoretical physicists"
 cat_page_url = 'https://en.wikipedia.org/w/index.php?title=Category:Theoretical_physicists'
@@ -40,8 +48,7 @@ while True:
             break
     # If a 'next' category page was found to be processed
     if more_cat_page:
-        now = time.time()
-        sleep_time = DELAY_REQUESTS - (now - start)
+        sleep_time = DELAY_REQUESTS - (time.time() - start)
         print(f'Sleeping for {round(sleep_time, 3)} second')
         time.sleep(sleep_time)
     else:
@@ -53,3 +60,9 @@ print(f"\n{len(list_physicists_urls)} URLs found")
 # number of bytes in a megabyte
 MBFACTOR = float(1 << 20)
 print(f'Total bytes downloaded: {bytes_downloaded} [{round(bytes_downloaded/MBFACTOR, 2)} MB]')
+# Save the list of URLs as a pickle file
+if save_list:
+    filepath = os.path.expanduser('~/data/wikipedia/list_physicists_urls.pkl')
+    print(f'Saving list of URLs: {filepath}')
+    with open(filepath, 'wb') as f:
+        pickle.dump(list_physicists_urls, f)
