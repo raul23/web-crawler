@@ -93,11 +93,12 @@ From the `previous list <#get-list-of-urls-of-theoretical-physicists-wikipedia-p
 
 `:information_source:`
 
-  - The Python script can be found at `get_physicists_urls.py <https://github.com/raul23/web-crawler/blob/main/exercises/get_physicists_urls.py>`_ 
+  - The Python script can be found at `download_wiki_pages.py <https://github.com/raul23/web-crawler/blob/main/exercises/download_wiki_pages.py>`_ 
   - The Python script requires the ``BeautifulSoup`` and ``requests`` libraries which can be installed with:
   
     - ``pip install beautifulsoup4``
     - ``pip install requests``
+  - By default, there is a delay of 2 seconds between HTTP requests.
 
 Here are the general steps for downloading the Wikipedia pages with the corresponding images:
 
@@ -116,11 +117,39 @@ Here are the general steps for downloading the Wikipedia pages with the correspo
 .. raw:: html
 
    <p align="center"><img src="./images/ex2_output.png"></p>
+   <p align="center"><img src="./images/wikipedia_directory.png"></p>
 
-3. Extract DOB and DOD from Wikipedia pages
-'''''''''''''''''''''''''''''''''''''''''''
+3. Extract DOB and DOD from Wikipedia pages [TODO]
+''''''''''''''''''''''''''''''''''''''''''''''''''
 `:information_source:`
 
   - **DOB:** *Date of Birth*
   - **DOD:** *Date of Death*
-  
+
+`:warning:` TODO
+
+4. Extract more information from the information box [TODO]
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+.. TODO: remove TODO in relative link eventually
+Apart from the *DOB* and *DOD* extracted `previously <#extract-dob-and-dod-from-wikipedia-pages-todo>`_ from physicists' Wikipedia pages, there are more information that can be obtained from the information box:
+
+- Place of birth and death
+- Citizenship
+- Alma mater
+- Known for
+- Awards
+- Fields
+- Institutions
+- Thesis
+- Doctoral advisor
+- Other academic advisors
+- Doctoral students
+- Other notable students
+- Influences
+- Influenced
+
+See for example: `Wolfgang Pauli <https://en.wikipedia.org/wiki/Wolfgang_Pauli>`_
+
+Some of these information can also be gleaned from other parts of the document.
+
+`:warning:` TODO
