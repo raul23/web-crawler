@@ -327,6 +327,7 @@ class Downloader:
 
 
 def main():
+    downloader = None
     exit_code = 0
     try:
         setup_log()
@@ -339,10 +340,10 @@ def main():
         print(yellow('Download interrupted!'))
         logger.exception(e)
         exit_code = 1
+    bytes_downloaded = downloader.bytes_downloaded if downloader else 0
     # Number of bytes in a mebibyte
     MBFACTOR = float(1 << 20)
     msg = blue('Total bytes downloaded:')
-    bytes_downloaded = downloader.bytes_downloaded
     print(f'{msg} {bytes_downloaded} [{round(bytes_downloaded/MBFACTOR, 2)} MiB]')
     return exit_code
 
