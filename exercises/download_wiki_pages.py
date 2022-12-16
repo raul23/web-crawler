@@ -402,7 +402,7 @@ def add_general_options(parser, add_opts=None, remove_opts=None,
         # TODO: explain each format
         parser_general_group.add_argument(
             '--log-format', dest='logging_formatter',
-            choices=['console', 'simple', 'only_msg'], default=_LOGGING_FORMATTER,
+            choices=['console', 'only_msg', 'simple',], default=_LOGGING_FORMATTER,
             help='Set logging formatter.' + get_default_message(_LOGGING_FORMATTER))
     return parser_general_group
 
