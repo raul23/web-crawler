@@ -21,6 +21,40 @@ This is the environment on which the script was tested:
 * `requests <https://requests.readthedocs.io/en/latest/>`_: **v2.28.1**, for sending HTTP GET requests
 * `beautifulsoup4 <https://www.crummy.com/software/BeautifulSoup/>`_ **v4.11.1**, for screen-scraping
 
+Usage
+'''''
+Script ``download_wiki_pages.py``
+---------------------------------
+List of options
+---------------
+To display the script's list of options and their descriptions::
+
+   $ pyton download_wiki_pages.py -h
+
+   usage: python download_wiki_pages.py [OPTIONS] {input_pickle_file} {output_directory}
+
+General options:
+
+-h, --help                              Show this help message and exit.
+-v, --version                           Show program's version number and exit.
+-q, --quiet                             Enable quiet mode, i.e. nothing will be printed.
+--verbose                               Print various debugging information, e.g. print traceback when there is an exception.
+--log-level                             Set logging level: {debug,info,warning,error}. (default: info)
+--log-format                            Set logging formatter. (default: simple)
+
+HTTP requests options:
+
+-u, --user-agent USER_AGENT             User Agent. (default: Mozilla/5.0 (X11; Linux x86_64) ...)
+-t, --http-timeout TIMEOUT              HTTP timeout in seconds. (default: 120)
+-d, --delay-requests DELAY              Delay in seconds between HTTP requests. (default: 2)
+
+`:information_source:`
+
+  The following are required input/ouput arguments:
+  
+  - ``input_pickle_file`` is the path to the pickle file containing the list of URLs to theoretical physicists' Wikipedia pages.
+  - ``output_directory`` is the path to the directory where the Wikipedia pages and corresponding images will be saved.
+
 Exercises
 =========
 Misc
