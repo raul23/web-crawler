@@ -223,6 +223,7 @@ Showing the first 4 URLs in the list::
   - The Python script saves the list of URLs as a pickle file if given the 's' option when running the script: 
   
     ``python get_physicists_urls.py s``
+  - For more information about the script's usage, check the `Usage <#usage-for-get-physicists-urls-py>`_ section.
 
 2. Download Wikipedia pages
 '''''''''''''''''''''''''''
@@ -236,6 +237,7 @@ From the `previous list <#get-list-of-urls-of-theoretical-physicists-wikipedia-p
     - ``pip install beautifulsoup4``
     - ``pip install requests``
   - By default, there is a delay of 2 seconds between HTTP requests.
+  - For more information about the script's usage, check the `Usage <#usage-for-download-wiki-pages-py>`_ section.
 
 Here are the general steps for downloading the Wikipedia pages with the corresponding images:
 
