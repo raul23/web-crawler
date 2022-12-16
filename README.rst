@@ -8,6 +8,9 @@ Web crawler + scraper
 
 Scripts
 =======
+Download Wikipedia pages of theoretical physicists
+--------------------------------------------------
+This script is from `Exercise 2 <#download-wikipedia-pages>`_. It takes as input a pickle file containing URLs to Wikipedia pages of theoretical physicists (see `Exercise 1 <#get-list-of-urls-of-theoretical-physicists-wikipedia-pages>`_).
 
 Exercises
 =========
