@@ -141,7 +141,57 @@ Misc
 
 2. Extract DOB and DOD from text [TODO]
 '''''''''''''''''''''''''''''''''''''''
-`:warning:` TODO
+Method 1: ``nltk`` + part of speech tag ``NNP``
+```````````````````````````````````````````````
+From the  `stackoverflow user 'e h' <https://stackoverflow.com/q/20290870>`_:
+
+ This is what I tried (code is below): I am using nltk to find everything marked as a 
+ person and then generating a list of all the NNP parts of that person. I am skipping 
+ persons where there is only one NNP which avoids grabbing a lone surname.
+ 
+.. code-block:: python
+
+   import nltk
+   from nameparser.parser import HumanName
+   
+   nltk.download('punkt')
+   nltk.download('averaged_perceptron_tagger')
+   nltk.download('maxent_ne_chunker')
+   nltk.download('words')
+
+   def get_human_names(text):
+       tokens = nltk.tokenize.word_tokenize(text)
+       pos = nltk.pos_tag(tokens)
+       sentt = nltk.ne_chunk(pos, binary = False)
+       person_list = []
+       person = []
+       name = ""
+       for subtree in sentt.subtrees(filter=lambda t: t.label() == 'PERSON'):
+           for leaf in subtree.leaves():
+               person.append(leaf[0])
+           if len(person) > 1: #avoid grabbing lone surnames
+               for part in person:
+                   name += part + ' '
+               if name[:-1] not in person_list:
+                   person_list.append(name[:-1])
+               name = ''
+           person = []
+
+       return person_list
+       
+   names = get_human_names(text)
+   print("LAST, FIRST")
+   for name in names: 
+       last_first = HumanName(name).last + ', ' + HumanName(name).first
+       print(last_first)
+
+`:information_source:`
+
+  The `stackoverflow user 'Gihan Gamage' <https://stackoverflow.com/questions/20290870/improving-the-extraction-of-human-names-with-nltk#comment108366804_20290870>`_ suggests downloading the nltk packages after the import statements.
+
+The script can be found at `get_names_from_text.py <../exercises/get_names_from_text.py>`_. To run it::
+
+ $ python get_names_from_text.py -m 1
 
 Wikipedia pages of theoretical physicists
 -----------------------------------------
@@ -229,7 +279,7 @@ From the `previous list <#get-list-of-urls-of-theoretical-physicists-wikipedia-p
 
 `:information_source:`
 
-  - The Python script can be found at `download_wiki_pages.py <https://github.com/raul23/web-crawler/blob/main/exercises/download_wiki_pages.py>`_ 
+  - The Python script can be found at `download_wiki_pages.py <../exercises/download_wiki_pages.py>`_ 
   - The Python script requires the ``BeautifulSoup`` and ``requests`` libraries which can be installed with:
   
     - ``pip install beautifulsoup4``
