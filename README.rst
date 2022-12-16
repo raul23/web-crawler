@@ -40,7 +40,7 @@ General options:
 -q, --quiet                             Enable quiet mode, i.e. nothing will be printed.
 --verbose                               Print various debugging information, e.g. print traceback when there is an exception.
 --log-level                             Set logging level: {debug,info,warning,error}. (default: info)
---log-format                            Set logging formatter. (default: simple)
+--log-format                            Set logging formatter: {console,only_msg, simple}. (default: simple)
 
 HTTP requests options:
 
@@ -54,6 +54,14 @@ HTTP requests options:
   
   - ``input_pickle_file`` is the path to the pickle file containing the list of URLs to theoretical physicists' Wikipedia pages.
   - ``output_directory`` is the path to the directory where the Wikipedia pages and corresponding images will be saved.
+
+`:information_source:`
+
+  Logging formatters:
+
+  - 'console': ``%(asctime)s | %(levelname)-8s | %(message)s``
+  - 'only_msg': ``%(message)s``
+  - 'simple': ``%(levelname)-8s %(message)s``
 
 Exercises
 =========
