@@ -34,7 +34,7 @@ Run the script by specifying the path of the pickle that will contain the list o
 
   - ``~/Data/wikipedia/list_physicists_urls.pkl``: pickle file that will contain the list of URLs to Wikipedia 
     pages of theoretical physicists
-  - ``-d 3``: 3 seconds between HTTP requests 
+  - ``-d 3``: three seconds between HTTP requests 
    
   Check `List of options <#list-of-options-for-get-physicists-urls-py>`_ to know more about the other options you can use.
 
