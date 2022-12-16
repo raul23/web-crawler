@@ -6,10 +6,28 @@ Web crawler + scraper
    :local:
    :backlinks: top
 
+Scripts
+=======
+Download Wikipedia pages of theoretical physicists
+--------------------------------------------------
+This script is from `Exercise 2 <#download-wikipedia-pages>`_. It takes as input a pickle file containing URLs to Wikipedia pages of theoretical physicists (see `Exercise 1 <#get-list-of-urls-of-theoretical-physicists-wikipedia-pages>`_).
+
 Exercises
----------
-1. Get list of URLs of theoretical physicists' Wikipedia pages
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+=========
+Misc
+----
+1. Extract names from text [TODO]
+'''''''''''''''''''''''''''''''''
+TODO
+
+2. Extract DOB and DOD from text [TODO]
+'''''''''''''''''''''''''''''''''''''''
+TODO
+
+Wikipedia pages of theoretical physicists
+-----------------------------------------
+1. Get list of URLs to Wikipedia pages of theoretical physicists
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Starting from `Category:Theoretical physicists <https://en.wikipedia.org/w/index.php?title=Category:Theoretical_physicists>`_, get all the absolute URLs of theoretical physicists' Wikipedia pages by processing the list of relative URLs in the section **Pages in category "Theoretical physicists"** and crawling through the next pages until no more *next page* found.
 
 .. code-block:: python
