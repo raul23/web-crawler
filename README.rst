@@ -22,10 +22,10 @@ This is the environment on which the script was tested:
 
 `:information_source:` The built-in module ``urllib`` is used for sending HTTP requests.
 
-Usage
+Usage: 
 '''''
-Run the script
-```````````````
+Run the script ``get_physicists_urls.py`
+````````````````````````````````````````
 Run the script by specifying the path of the pickle that will contain the list of URLs::
 
    $ pyton get_physicists_urls.py ~/Data/wikipedia/list_physicists_urls.pkl -d 3
@@ -38,8 +38,8 @@ Run the script by specifying the path of the pickle that will contain the list o
    
   Check `List of options <#list-of-options>`_ to know more about the other options you can use.
 
-List of options
-```````````````
+List of options for ``get_physicists_urls.py`
+`````````````````````````````````````````````
 To display the script's list of options and their descriptions, use the ``-h`` option::
 
    $ pyton get_physicists_urls.py -h
@@ -73,8 +73,8 @@ This is the environment on which the script was tested:
 
 Usage
 '''''
-Run the script
-```````````````
+Run the script: ``download_wiki_pages.py``
+``````````````````````````````````````````
 Run the script by specifying the paths to the `pickle file <#download-wikipedia-pages>`_ and the ouput directory where the downloaded Wikipedia pages will be saved::
 
    $ pyton download_wiki_pages.py ~/Data/wikipedia/list_physicists_urls.pkl ~/Data/wikipedia/physicists/ --log-format only_msg --log-level debug
@@ -91,8 +91,8 @@ Run the script by specifying the paths to the `pickle file <#download-wikipedia-
    
 `:star:` In order to stop the script at any moment, press ``ctrl`` + ``c``.
 
-List of options
-```````````````
+List of options for ``download_wiki_pages.py``
+``````````````````````````````````````````````
 To display the script's list of options and their descriptions, use the ``-h`` option::
 
    $ pyton download_wiki_pages.py -h
