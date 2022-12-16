@@ -185,9 +185,53 @@ From the  `stackoverflow user 'e h' <https://stackoverflow.com/q/20290870>`_:
 
   The `stackoverflow user 'Gihan Gamage' <https://stackoverflow.com/questions/20290870/improving-the-extraction-of-human-names-with-nltk#comment108366804_20290870>`_ suggests downloading the nltk packages after the import statements.
 
-The script can be found at `get_names_from_text.py <./exercises/get_names_from_text.py>`_. To run it::
+The script can be found at `get_names_from_text.py <./exercises/get_names_from_text.py>`_. To run it on the `four texts <./exercises/get_names_from_text.py#L2>`_::
 
  $ python get_names_from_text.py -m 1
+ 
+Ouput::
+
+   #########
+   # Text1 #
+   #########
+   LAST, FIRST
+   -----------
+   Pauli, Ernst
+   Einstein, Albert
+
+   #########
+   # Text2 #
+   #########
+   LAST, FIRST
+   -----------
+   Anderson, Harry
+   Hartley, Miles
+   Noyes, Pierre
+   Kuhn, Thomas
+   Silsbee, Henry
+   Hasbrouck, John
+
+   #########
+   # Text3 #
+   #########
+   LAST, FIRST
+   -----------
+   II, Ferdinando
+   Croce, Santa
+   , Urban
+   Barberini, Francesco
+
+   #########
+   # Text4 #
+   #########
+   LAST, FIRST
+   -----------
+   Velde, Francois
+   Branson, Richard
+   Galactic, Virgin
+   Krugman, Paul
+   Summers, Larry
+   Colas, Nick
 
 2. Extract DOB and DOD from text [TODO]
 '''''''''''''''''''''''''''''''''''''''
