@@ -14,8 +14,20 @@ This script is from `Exercise 2 <#download-wikipedia-pages>`_. It takes as input
 
 Exercises
 =========
+Misc
+----
+1. Extract names from text
+''''''''''''''''''''''''''
+TODO
+
+2. Extract DOB and DOD from text
+''''''''''''''''''''''''''''''''
+TODO
+
+Wikipedia pages of theoretical physicists
+-----------------------------------------
 1. Get list of URLs to Wikipedia pages of theoretical physicists
-----------------------------------------------------------------
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Starting from `Category:Theoretical physicists <https://en.wikipedia.org/w/index.php?title=Category:Theoretical_physicists>`_, get all the absolute URLs of theoretical physicists' Wikipedia pages by processing the list of relative URLs in the section **Pages in category "Theoretical physicists"** and crawling through the next pages until no more *next page* found.
 
 .. code-block:: python
@@ -94,7 +106,7 @@ Showing the first 4 URLs in the list::
     ``python get_physicists_urls.py s``
 
 2. Download Wikipedia pages
----------------------------
+'''''''''''''''''''''''''''
 From the `previous list <#get-list-of-urls-of-theoretical-physicists-wikipedia-pages>`_ of URLs to Wikipedia pages, download each page (html only) along with the image in the info box if it is found.
 
 `:information_source:`
@@ -126,7 +138,7 @@ Here are the general steps for downloading the Wikipedia pages with the correspo
    <p align="center"><img src="./images/wikipedia_directory.png"></p>
 
 3. Extract DOB and DOD from Wikipedia pages [TODO]
---------------------------------------------------
+''''''''''''''''''''''''''''''''''''''''''''''''''
 `:information_source:`
 
   - **DOB:** *Date of Birth*
@@ -135,7 +147,7 @@ Here are the general steps for downloading the Wikipedia pages with the correspo
 `:warning:` TODO
 
 4. Extract more information from the information box [TODO]
------------------------------------------------------------
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 .. TODO: remove TODO in relative link eventually
 Apart from the *DOB* and *DOD* extracted `previously <#extract-dob-and-dod-from-wikipedia-pages-todo>`_ from physicists' Wikipedia pages, there are more information that can be obtained from the information box:
 
