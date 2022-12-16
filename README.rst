@@ -24,8 +24,8 @@ This is the environment on which the script was tested:
 
 Usage: 
 '''''
-Run the script ``get_physicists_urls.py`
-````````````````````````````````````````
+Run the script ``get_physicists_urls.py``
+`````````````````````````````````````````
 Run the script by specifying the path of the pickle that will contain the list of URLs::
 
    $ pyton get_physicists_urls.py ~/Data/wikipedia/list_physicists_urls.pkl -d 3
@@ -38,8 +38,8 @@ Run the script by specifying the path of the pickle that will contain the list o
    
   Check `List of options <#list-of-options>`_ to know more about the other options you can use.
 
-List of options for ``get_physicists_urls.py`
-`````````````````````````````````````````````
+List of options for ``get_physicists_urls.py``
+``````````````````````````````````````````````
 To display the script's list of options and their descriptions, use the ``-h`` option::
 
    $ pyton get_physicists_urls.py -h
