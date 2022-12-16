@@ -14,8 +14,8 @@ This script is from `Exercise 2 <#download-wikipedia-pages>`_. It takes as input
 
 Exercises
 =========
-1. Get list of URLs of theoretical physicists' Wikipedia pages
---------------------------------------------------------------
+1. Get list of URLs to Wikipedia pages of theoretical physicists
+----------------------------------------------------------------
 Starting from `Category:Theoretical physicists <https://en.wikipedia.org/w/index.php?title=Category:Theoretical_physicists>`_, get all the absolute URLs of theoretical physicists' Wikipedia pages by processing the list of relative URLs in the section **Pages in category "Theoretical physicists"** and crawling through the next pages until no more *next page* found.
 
 .. code-block:: python
