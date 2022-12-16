@@ -135,12 +135,10 @@ Exercises
 =========
 Misc
 ----
-1. Extract names from text [TODO]
-'''''''''''''''''''''''''''''''''
+1. Extract names from text
+''''''''''''''''''''''''''
 `:warning:` TODO
 
-2. Extract DOB and DOD from text [TODO]
-'''''''''''''''''''''''''''''''''''''''
 Method 1: ``nltk`` + part of speech tag ``NNP``
 ```````````````````````````````````````````````
 From the  `stackoverflow user 'e h' <https://stackoverflow.com/q/20290870>`_:
@@ -192,6 +190,10 @@ From the  `stackoverflow user 'e h' <https://stackoverflow.com/q/20290870>`_:
 The script can be found at `get_names_from_text.py <../exercises/get_names_from_text.py>`_. To run it::
 
  $ python get_names_from_text.py -m 1
+
+2. Extract DOB and DOD from text [TODO]
+'''''''''''''''''''''''''''''''''''''''
+`:warning:` TODO
 
 Wikipedia pages of theoretical physicists
 -----------------------------------------
