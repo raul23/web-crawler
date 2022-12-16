@@ -73,7 +73,7 @@ This is the environment on which the script was tested:
 
 Usage
 '''''
-Run the script: ``download_wiki_pages.py``
+Run the script ``download_wiki_pages.py``
 ``````````````````````````````````````````
 Run the script by specifying the paths to the `pickle file <#download-wikipedia-pages>`_ and the ouput directory where the downloaded Wikipedia pages will be saved::
 
