@@ -23,11 +23,30 @@ This is the environment on which the script was tested:
 
 Usage
 '''''
-Script ``download_wiki_pages.py``
----------------------------------
+Run the script
+```````````````
+Run the script by specifying the paths to the `pickle file <#download-wikipedia-pages>`_ and the ouput directory where the downloaded Wikipedia pages will be saved::
+
+   $ pyton download_wiki_pages.py ~/Data/wikipedia/list_physicists_urls.pkl ~/Data/wikipedia/physicists/ --log-format only_msg --log-level debug
+   
+`:information_source:`
+
+  - ``~/Data/wikipedia/list_physicists_urls.pkl``: pickle file containing list of URLs to Wikipedia 
+    pages of theoretical physicists
+  - ``~/Data/wikipedia/physicists/``: ouput directory where the downloaded Wikipedia pages will be saved
+  - ``--log-format only_msg``: display only the logging message without the timestamp or the logging level
+  - ``--log-level debug``: display all logging messages with the ``debug`` logging level
+   
+  Check `List of options <#list-of-options>`_ to know more about the other options you can use.
+   
+`:star:`
+
+   In order to stop the ``start_dv`` script at any moment, press
+   ``ctrl`` + ``c``.
+
 List of options
----------------
-To display the script's list of options and their descriptions::
+```````````````
+To display the script's list of options and their descriptions, use the ``-h`` option::
 
    $ pyton download_wiki_pages.py -h
 
@@ -40,7 +59,7 @@ General options:
 -q, --quiet                             Enable quiet mode, i.e. nothing will be printed.
 --verbose                               Print various debugging information, e.g. print traceback when there is an exception.
 --log-level                             Set logging level: {debug,info,warning,error}. (default: info)
---log-format                            Set logging formatter: {console,only_msg, simple}. (default: simple)
+--log-format                            Set logging formatter: {console,only_msg,simple}. (default: simple)
 
 HTTP requests options:
 
@@ -59,9 +78,9 @@ HTTP requests options:
 
   Logging formatters:
 
-  - 'console': ``%(asctime)s | %(levelname)-8s | %(message)s``
-  - 'only_msg': ``%(message)s``
-  - 'simple': ``%(levelname)-8s %(message)s``
+  - **console**: ``%(asctime)s | %(levelname)-8s | %(message)s``
+  - **only_msg**: ``%(message)s``
+  - **simple**: ``%(levelname)-8s %(message)s``
 
 Exercises
 =========
