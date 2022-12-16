@@ -36,7 +36,7 @@ Run the script by specifying the path of the pickle that will contain the list o
     pages of theoretical physicists
   - ``-d 3``: 3 seconds between HTTP requests 
    
-  Check `List of options <#list-of-options>`_ to know more about the other options you can use.
+  Check `List of options <#list-of-options-for-get-physicists-urls-py>`_ to know more about the other options you can use.
 
 List of options for ``get_physicists_urls.py``
 ``````````````````````````````````````````````
@@ -87,7 +87,7 @@ Run the script by specifying the paths to the `pickle file <#download-wikipedia-
   - ``--log-format only_msg``: display only the logging message without the timestamp or the logging level
   - ``--log-level debug``: display all logging messages with the ``debug`` logging level
    
-  Check `List of options <#list-of-options>`_ to know more about the other options you can use.
+  Check `List of options <#list-of-options-for-download-wiki-pages-py>`_ to know more about the other options you can use.
    
 `:star:` In order to stop the script at any moment, press ``ctrl`` + ``c``.
 
