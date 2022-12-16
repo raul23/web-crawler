@@ -16,12 +16,12 @@ Exercises
 =========
 Misc
 ----
-1. Extract names from text
-''''''''''''''''''''''''''
+1. Extract names from text [TODO]
+'''''''''''''''''''''''''''''''''
 TODO
 
-2. Extract DOB and DOD from text
-''''''''''''''''''''''''''''''''
+2. Extract DOB and DOD from text [TODO]
+'''''''''''''''''''''''''''''''''''''''
 TODO
 
 Wikipedia pages of theoretical physicists
