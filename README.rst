@@ -10,7 +10,53 @@ Scripts
 =======
 ``get_physicists_urls.py``: Get list of URLs to Wikipedia pages of theoretical physicists
 -----------------------------------------------------------------------------------------
-This script is from `Exercise 1 <#get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_.
+This script is from `Exercise 1 <#get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_. It outputs a list of URLs to Wikipedia pages of theoretical physicsts that is saved as pickle file.
+
+Dependencies
+''''''''''''
+This is the environment on which the script was tested:
+
+* **Platforms:** macOS
+* **Python**: versions **3.7** and **3.8**
+* `beautifulsoup4 <https://www.crummy.com/software/BeautifulSoup/>`_ **v4.11.1**, for screen-scraping
+
+`:information_source:` The built-in module ``urllib`` is used for sending HTTP requests.
+
+Usage
+'''''
+Run the script
+```````````````
+Run the script by specifying the path of the pickle that will contain the list of URLs::
+
+   $ pyton get_physicists_urls.py ~/Data/wikipedia/list_physicists_urls.pkl -d 3
+   
+`:information_source:`
+
+  - ``~/Data/wikipedia/list_physicists_urls.pkl``: pickle file that will contain the list of URLs to Wikipedia 
+    pages of theoretical physicists
+  - ``-d 3``: 3 seconds between HTTP requests 
+   
+  Check `List of options <#list-of-options>`_ to know more about the other options you can use.
+
+List of options
+```````````````
+To display the script's list of options and their descriptions, use the ``-h`` option::
+
+   $ pyton get_physicists_urls.py -h
+
+   usage: python get_physicists_urls.py [OPTIONS] {pickle_file}
+
+   Get URLs to Wikipedia pages of theoretical physicists
+
+   positional arguments:
+     pickle_file           Path to the pickle file that will contain the list of URLs to theoretical physicists' Wikipedia pages.
+
+   optional arguments:
+     -h, --help            show this help message and exit
+     -d DELAY, --delay-requests DELAY
+                           Delay in seconds between HTTP requests. (default: 2)
+
+`:warning:` Don't use a delay (``-d``) too short (e.g. 0.5 second between HTTP requests) because you will overwhelm the server and your IP address will eventually get banned.
 
 ``download_wiki_pages.py``: Download Wikipedia pages of theoretical physicists
 ------------------------------------------------------------------------------
@@ -43,7 +89,7 @@ Run the script by specifying the paths to the `pickle file <#download-wikipedia-
    
   Check `List of options <#list-of-options>`_ to know more about the other options you can use.
    
-`:star:` In order to stop the ``start_dv`` script at any moment, press ``ctrl`` + ``c``.
+`:star:` In order to stop the script at any moment, press ``ctrl`` + ``c``.
 
 List of options
 ```````````````
