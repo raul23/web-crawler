@@ -48,9 +48,9 @@ HTTP requests options:
 -t, --http-timeout TIMEOUT              HTTP timeout in seconds. (default: 120)
 -d, --delay-requests DELAY              Delay in seconds between HTTP requests. (default: 2)
 
-`:information_source:`
+`:star:`
 
-  The following are required input/ouput arguments:
+  The following are **required** input/ouput arguments:
   
   - ``input_pickle_file`` is the path to the pickle file containing the list of URLs to theoretical physicists' Wikipedia pages.
   - ``output_directory`` is the path to the directory where the Wikipedia pages and corresponding images will be saved.
