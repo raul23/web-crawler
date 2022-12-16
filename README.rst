@@ -78,7 +78,7 @@ HTTP requests options:
 
 `:information_source:`
 
-  Logging formatters:
+  Logging formatters to choose from:
 
   - **console**: ``%(asctime)s | %(levelname)-8s | %(message)s``
   - **only_msg**: ``%(message)s``
