@@ -22,8 +22,8 @@ This is the environment on which the script was tested:
 
 `:information_source:` The built-in module ``urllib`` is used for sending HTTP requests.
 
-Usage: 
-'''''
+Usage for ``get_physicists_urls.py``
+''''''''''''''''''''''''''''''''''''
 Run the script ``get_physicists_urls.py``
 `````````````````````````````````````````
 Run the script by specifying the path of the pickle that will contain the list of URLs::
@@ -71,8 +71,8 @@ This is the environment on which the script was tested:
 * `requests <https://requests.readthedocs.io/en/latest/>`_: **v2.28.1**, for sending HTTP GET requests
 * `beautifulsoup4 <https://www.crummy.com/software/BeautifulSoup/>`_ **v4.11.1**, for screen-scraping
 
-Usage
-'''''
+Usage for ``download_wiki_pages.py``
+''''''''''''''''''''''''''''''''''''
 Run the script ``download_wiki_pages.py``
 ``````````````````````````````````````````
 Run the script by specifying the paths to the `pickle file <#get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_ and the ouput directory where the downloaded Wikipedia pages will be saved::
