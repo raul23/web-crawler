@@ -351,7 +351,7 @@ def yellow(msg):
 # Utilities
 # ---------
 _DEFAULT_MSG = ' (default: {})'
-_LOGGING_FORMATTER = 'only_msg'
+_LOGGING_FORMATTER = 'simple'
 _LOGGING_LEVEL = 'info'
 
 
