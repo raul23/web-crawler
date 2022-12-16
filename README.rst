@@ -8,9 +8,82 @@ Web crawler + scraper
 
 Scripts
 =======
-Download Wikipedia pages of theoretical physicists
---------------------------------------------------
+``get_physicists_urls.py``: Get list of URLs to Wikipedia pages of theoretical physicists
+-----------------------------------------------------------------------------------------
+This script is from `Exercise 1 <#get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_.
+
+``download_wiki_pages.py``: Download Wikipedia pages of theoretical physicists
+------------------------------------------------------------------------------
 This script is from `Exercise 2 <#download-wikipedia-pages>`_. It takes as input a pickle file containing URLs to Wikipedia pages of theoretical physicists (see `Exercise 1 <#get-list-of-urls-of-theoretical-physicists-wikipedia-pages>`_).
+
+Dependencies
+''''''''''''
+This is the environment on which the script was tested:
+
+* **Platforms:** macOS
+* **Python**: versions **3.7** and **3.8**
+* `requests <https://requests.readthedocs.io/en/latest/>`_: **v2.28.1**, for sending HTTP GET requests
+* `beautifulsoup4 <https://www.crummy.com/software/BeautifulSoup/>`_ **v4.11.1**, for screen-scraping
+
+Usage
+'''''
+Run the script
+```````````````
+Run the script by specifying the paths to the `pickle file <#download-wikipedia-pages>`_ and the ouput directory where the downloaded Wikipedia pages will be saved::
+
+   $ pyton download_wiki_pages.py ~/Data/wikipedia/list_physicists_urls.pkl ~/Data/wikipedia/physicists/ --log-format only_msg --log-level debug
+   
+`:information_source:`
+
+  - ``~/Data/wikipedia/list_physicists_urls.pkl``: pickle file containing list of URLs to Wikipedia 
+    pages of theoretical physicists
+  - ``~/Data/wikipedia/physicists/``: ouput directory where the downloaded Wikipedia pages will be saved
+  - ``--log-format only_msg``: display only the logging message without the timestamp or the logging level
+  - ``--log-level debug``: display all logging messages with the ``debug`` logging level
+   
+  Check `List of options <#list-of-options>`_ to know more about the other options you can use.
+   
+`:star:` In order to stop the ``start_dv`` script at any moment, press ``ctrl`` + ``c``.
+
+List of options
+```````````````
+To display the script's list of options and their descriptions, use the ``-h`` option::
+
+   $ pyton download_wiki_pages.py -h
+
+   usage: python download_wiki_pages.py [OPTIONS] {input_pickle_file} {output_directory}
+
+General options:
+
+-h, --help                              Show this help message and exit.
+-v, --version                           Show program's version number and exit.
+-q, --quiet                             Enable quiet mode, i.e. nothing will be printed.
+--verbose                               Print various debugging information, e.g. print traceback when there is an exception.
+--log-level                             Set logging level: {debug,info,warning,error}. (default: info)
+--log-format                            Set logging formatter: {console,only_msg,simple}. (default: simple)
+
+HTTP requests options:
+
+-u, --user-agent USER_AGENT             User Agent. (default: Mozilla/5.0 (X11; Linux x86_64) ...)
+-t, --http-timeout TIMEOUT              HTTP timeout in seconds. (default: 120)
+-d, --delay-requests DELAY              Delay in seconds between HTTP requests. (default: 2)
+
+`:warning:` Don't use a delay (``-d``) too short (e.g. 0.5 second between HTTP requests) because you will overwhelm the server and your IP address will eventually get banned.
+
+`:star:`
+
+  The following are **required** input/ouput arguments:
+  
+  - ``input_pickle_file`` is the path to the pickle file containing the list of URLs to theoretical physicists' Wikipedia pages.
+  - ``output_directory`` is the path to the directory where the Wikipedia pages and corresponding images will be saved.
+
+`:information_source:`
+
+  Logging formatters to choose from:
+
+  - **console**: ``%(asctime)s | %(levelname)-8s | %(message)s``
+  - **only_msg**: ``%(message)s``
+  - **simple**: ``%(levelname)-8s %(message)s``
 
 Exercises
 =========
@@ -18,11 +91,11 @@ Misc
 ----
 1. Extract names from text [TODO]
 '''''''''''''''''''''''''''''''''
-TODO
+`:warning:` TODO
 
 2. Extract DOB and DOD from text [TODO]
 '''''''''''''''''''''''''''''''''''''''
-TODO
+`:warning:` TODO
 
 Wikipedia pages of theoretical physicists
 -----------------------------------------
