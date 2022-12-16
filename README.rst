@@ -141,7 +141,7 @@ Misc
 
 Method 1: ``nltk`` + part of speech tag ``NNP``
 ```````````````````````````````````````````````
-From the  `stackoverflow user *e h* <https://stackoverflow.com/q/20290870>`_:
+From the  `stackoverflow user 'e h' <https://stackoverflow.com/q/20290870>`_:
 
  This is what I tried (code is below): I am using nltk to find everything marked as a 
  person and then generating a list of all the NNP parts of that person. I am skipping 
@@ -185,7 +185,7 @@ From the  `stackoverflow user *e h* <https://stackoverflow.com/q/20290870>`_:
 
 `:information_source:`
 
-  The `stackoverflow user *Gihan Gamage* <https://stackoverflow.com/questions/20290870/improving-the-extraction-of-human-names-with-nltk#comment108366804_20290870>`_ suggests downloading the nltk packages after the import statements.
+  The `stackoverflow user 'Gihan Gamage' <https://stackoverflow.com/questions/20290870/improving-the-extraction-of-human-names-with-nltk#comment108366804_20290870>`_ suggests downloading the nltk packages after the import statements.
 
 The script can be found at `get_names_from_text.py <./exercises/get_names_from_text.py>`_. To run it::
 
