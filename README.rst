@@ -10,11 +10,57 @@ Scripts
 =======
 ``get_physicists_urls.py``: Get list of URLs to Wikipedia pages of theoretical physicists
 -----------------------------------------------------------------------------------------
-This script is from `Exercise 1 <#get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_.
+This script is from `Exercise 1 <#get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_. It outputs a list of URLs to Wikipedia pages of theoretical physicsts that is saved as a pickle file.
+
+Dependencies
+''''''''''''
+This is the environment on which the script was tested:
+
+* **Platforms:** macOS
+* **Python**: versions **3.7** and **3.8**
+* `beautifulsoup4 <https://www.crummy.com/software/BeautifulSoup/>`_ **v4.11.1**, for screen-scraping
+
+`:information_source:` The built-in module ``urllib`` is used for sending HTTP requests.
+
+Usage for ``get_physicists_urls.py``
+''''''''''''''''''''''''''''''''''''
+Run the script ``get_physicists_urls.py``
+`````````````````````````````````````````
+Run the script by specifying the path of the pickle that will contain the list of URLs::
+
+   $ pyton get_physicists_urls.py ~/Data/wikipedia/list_physicists_urls.pkl -d 3
+   
+`:information_source:`
+
+  - ``~/Data/wikipedia/list_physicists_urls.pkl``: pickle file that will contain the list of URLs to Wikipedia 
+    pages of theoretical physicists
+  - ``-d 3``: three seconds between HTTP requests 
+   
+  Check `List of options <#list-of-options-for-get-physicists-urls-py>`_ to know more about the other options you can use.
+
+List of options for ``get_physicists_urls.py``
+``````````````````````````````````````````````
+To display the script's list of options and their descriptions, use the ``-h`` option::
+
+   $ pyton get_physicists_urls.py -h
+
+   usage: python get_physicists_urls.py [OPTIONS] {pickle_file}
+
+   Get URLs to Wikipedia pages of theoretical physicists
+
+   positional arguments:
+     pickle_file           Path to the pickle file that will contain the list of URLs to theoretical physicists' Wikipedia pages.
+
+   optional arguments:
+     -h, --help            show this help message and exit
+     -d DELAY, --delay-requests DELAY
+                           Delay in seconds between HTTP requests. (default: 2)
+
+`:warning:` Don't use a delay (``-d``) too short (e.g. 0.5 second between HTTP requests) because you will overwhelm the server and your IP address will eventually get banned.
 
 ``download_wiki_pages.py``: Download Wikipedia pages of theoretical physicists
 ------------------------------------------------------------------------------
-This script is from `Exercise 2 <#download-wikipedia-pages>`_. It takes as input a pickle file containing URLs to Wikipedia pages of theoretical physicists (see `Exercise 1 <#get-list-of-urls-of-theoretical-physicists-wikipedia-pages>`_).
+This script is from `Exercise 2 <#download-wikipedia-pages>`_. It takes as input a pickle file containing URLs to Wikipedia pages of theoretical physicists (see `Exercise 1 <#get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_).
 
 Dependencies
 ''''''''''''
@@ -25,28 +71,28 @@ This is the environment on which the script was tested:
 * `requests <https://requests.readthedocs.io/en/latest/>`_: **v2.28.1**, for sending HTTP GET requests
 * `beautifulsoup4 <https://www.crummy.com/software/BeautifulSoup/>`_ **v4.11.1**, for screen-scraping
 
-Usage
-'''''
-Run the script
-```````````````
-Run the script by specifying the paths to the `pickle file <#download-wikipedia-pages>`_ and the ouput directory where the downloaded Wikipedia pages will be saved::
+Usage for ``download_wiki_pages.py``
+''''''''''''''''''''''''''''''''''''
+Run the script ``download_wiki_pages.py``
+``````````````````````````````````````````
+Run the script by specifying the paths to the `pickle file <#get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_ and the ouput directory where the downloaded Wikipedia pages will be saved::
 
    $ pyton download_wiki_pages.py ~/Data/wikipedia/list_physicists_urls.pkl ~/Data/wikipedia/physicists/ --log-format only_msg --log-level debug
    
 `:information_source:`
 
   - ``~/Data/wikipedia/list_physicists_urls.pkl``: pickle file containing list of URLs to Wikipedia 
-    pages of theoretical physicists
+    pages of theoretical physicists (See `Exercise 1 <#get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_)
   - ``~/Data/wikipedia/physicists/``: ouput directory where the downloaded Wikipedia pages will be saved
   - ``--log-format only_msg``: display only the logging message without the timestamp or the logging level
   - ``--log-level debug``: display all logging messages with the ``debug`` logging level
    
-  Check `List of options <#list-of-options>`_ to know more about the other options you can use.
+  Check `List of options <#list-of-options-for-download-wiki-pages-py>`_ to know more about the other options you can use.
    
-`:star:` In order to stop the ``start_dv`` script at any moment, press ``ctrl`` + ``c``.
+`:star:` In order to stop the script at any moment, press ``ctrl`` + ``c``.
 
-List of options
-```````````````
+List of options for ``download_wiki_pages.py``
+``````````````````````````````````````````````
 To display the script's list of options and their descriptions, use the ``-h`` option::
 
    $ pyton download_wiki_pages.py -h
@@ -174,9 +220,8 @@ Showing the first 4 URLs in the list::
   - The Python script requires the ``BeautifulSoup`` library which can be installed with:
   
     ``pip install pip install beautifulsoup4``
-  - The Python script saves the list of URLs as a pickle file if given the 's' option when running the script: 
-  
-    ``python get_physicists_urls.py s``
+  - The Python script saves the list of URLs as a pickle file
+  - For more information about the script's usage, check the `Usage <#usage-for-get-physicists-urls-py>`_ section.
 
 2. Download Wikipedia pages
 '''''''''''''''''''''''''''
@@ -190,6 +235,7 @@ From the `previous list <#get-list-of-urls-of-theoretical-physicists-wikipedia-p
     - ``pip install beautifulsoup4``
     - ``pip install requests``
   - By default, there is a delay of 2 seconds between HTTP requests.
+  - For more information about the script's usage, check the `Usage <#usage-for-download-wiki-pages-py>`_ section.
 
 Here are the general steps for downloading the Wikipedia pages with the corresponding images:
 
