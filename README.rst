@@ -39,10 +39,7 @@ Run the script by specifying the paths to the `pickle file <#download-wikipedia-
    
   Check `List of options <#list-of-options>`_ to know more about the other options you can use.
    
-`:star:`
-
-   In order to stop the ``start_dv`` script at any moment, press
-   ``ctrl`` + ``c``.
+`:star:` In order to stop the ``start_dv`` script at any moment, press ``ctrl`` + ``c``.
 
 List of options
 ```````````````
