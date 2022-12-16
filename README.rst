@@ -10,7 +10,7 @@ Scripts
 =======
 ``get_physicists_urls.py``: Get list of URLs to Wikipedia pages of theoretical physicists
 -----------------------------------------------------------------------------------------
-This script is from `Exercise 1 <#get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_. It outputs a list of URLs to Wikipedia pages of theoretical physicsts that is saved as pickle file.
+This script is from `Exercise 1 <#get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_. It outputs a list of URLs to Wikipedia pages of theoretical physicsts that is saved as a pickle file.
 
 Dependencies
 ''''''''''''
