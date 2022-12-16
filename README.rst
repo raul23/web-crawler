@@ -17,9 +17,9 @@ Dependencies
 This is the environment on which the script was tested:
 
 * **Platforms:** macOS
-* **Python**: **3.7** and **3.8**
-* `requests <https://requests.readthedocs.io/en/latest/>`_: **2.28.1** for sending HTTP GET requests
-* `beautifulsoup4 <https://www.crummy.com/software/BeautifulSoup/>`_ **4.11.1** for screen-scraping
+* **Python**: versions **3.7** and **3.8**
+* `requests <https://requests.readthedocs.io/en/latest/>`_: **v2.28.1**, for sending HTTP GET requests
+* `beautifulsoup4 <https://www.crummy.com/software/BeautifulSoup/>`_ **v4.11.1**, for screen-scraping
 
 Exercises
 =========
