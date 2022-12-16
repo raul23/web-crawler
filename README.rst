@@ -64,7 +64,7 @@ HTTP requests options:
 -t, --http-timeout TIMEOUT              HTTP timeout in seconds. (default: 120)
 -d, --delay-requests DELAY              Delay in seconds between HTTP requests. (default: 2)
 
-`:warning:` don't use a delay (``-d``) too short (e.g. 0.5 second between HTTP requests) because you will overwhelm the server and your IP address will eventually get banned.
+`:warning:` Don't use a delay (``-d``) too short (e.g. 0.5 second between HTTP requests) because you will overwhelm the server and your IP address will eventually get banned.
 
 `:star:`
 
