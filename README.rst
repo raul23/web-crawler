@@ -141,7 +141,7 @@ Misc
 
 Method 1: ``nltk`` + part of speech tag ``NNP``
 ```````````````````````````````````````````````
-From the  `stackoverflow user 'e h' <https://stackoverflow.com/q/20290870>`_:
+From the  `stackoverflow user *e h* <https://stackoverflow.com/q/20290870>`_:
 
  This is what I tried (code is below): I am using nltk to find everything marked as a 
  person and then generating a list of all the NNP parts of that person. I am skipping 
@@ -185,7 +185,7 @@ From the  `stackoverflow user 'e h' <https://stackoverflow.com/q/20290870>`_:
 
 `:information_source:`
 
-  The `stackoverflow user 'Gihan Gamage' <https://stackoverflow.com/questions/20290870/improving-the-extraction-of-human-names-with-nltk#comment108366804_20290870>`_ suggests downloading the nltk packages after the import statements.
+  The `stackoverflow user *Gihan Gamage* <https://stackoverflow.com/questions/20290870/improving-the-extraction-of-human-names-with-nltk#comment108366804_20290870>`_ suggests downloading the nltk packages after the import statements.
 
 The script can be found at `get_names_from_text.py <./exercises/get_names_from_text.py>`_. To run it::
 
@@ -268,7 +268,7 @@ Showing the first 4 URLs in the list::
 
 `:information_source:`
 
-  - The Python script can be found at `get_physicists_urls.py <https://github.com/raul23/web-crawler/blob/main/exercises/get_physicists_urls.py>`_
+  - The Python script can be found at `get_physicists_urls.py <./exercises/get_physicists_urls.py>`_
   - The Python script requires the ``BeautifulSoup`` library which can be installed with:
   
     ``pip install pip install beautifulsoup4``
@@ -281,7 +281,7 @@ From the `previous list <#get-list-of-urls-of-theoretical-physicists-wikipedia-p
 
 `:information_source:`
 
-  - The Python script can be found at `download_wiki_pages.py <../exercises/download_wiki_pages.py>`_ 
+  - The Python script can be found at `download_wiki_pages.py <./exercises/download_wiki_pages.py>`_ 
   - The Python script requires the ``BeautifulSoup`` and ``requests`` libraries which can be installed with:
   
     - ``pip install beautifulsoup4``
