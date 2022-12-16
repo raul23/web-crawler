@@ -8,6 +8,10 @@ Web crawler + scraper
 
 Scripts
 =======
+``get_physicists_urls.py``: Get list of URLs to Wikipedia pages of theoretical physicists
+-----------------------------------------------------------------------------------------
+This script is from `Exercise 1 <#get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_.
+
 ``download_wiki_pages.py``: download Wikipedia pages of theoretical physicists
 ------------------------------------------------------------------------------
 This script is from `Exercise 2 <#download-wikipedia-pages>`_. It takes as input a pickle file containing URLs to Wikipedia pages of theoretical physicists (see `Exercise 1 <#get-list-of-urls-of-theoretical-physicists-wikipedia-pages>`_).
