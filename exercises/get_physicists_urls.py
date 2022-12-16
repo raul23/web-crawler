@@ -1,9 +1,11 @@
+#!/usr/bin/env python
 import argparse
 import os
 import pickle
 import time
 import sys
 from urllib.request import urlopen
+
 from bs4 import BeautifulSoup
 
 
