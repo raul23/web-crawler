@@ -8,9 +8,18 @@ Web crawler + scraper
 
 Scripts
 =======
-Download Wikipedia pages of theoretical physicists
---------------------------------------------------
+``download_wiki_pages.py``: download Wikipedia pages of theoretical physicists
+------------------------------------------------------------------------------
 This script is from `Exercise 2 <#download-wikipedia-pages>`_. It takes as input a pickle file containing URLs to Wikipedia pages of theoretical physicists (see `Exercise 1 <#get-list-of-urls-of-theoretical-physicists-wikipedia-pages>`_).
+
+Dependencies
+''''''''''''
+This is the environment on which the script was tested:
+
+* **Platforms:** macOS
+* **Python**: **3.7** and **3.8**
+* `requests <https://requests.readthedocs.io/en/latest/>`_: **2.28.1** for sending HTTP GET requests
+* `beautifulsoup4 <https://www.crummy.com/software/BeautifulSoup/>`_ **4.11.1** for screen-scraping
 
 Exercises
 =========
