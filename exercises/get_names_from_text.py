@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import argparse
 import time
 
 import nltk
@@ -104,20 +105,43 @@ def get_human_names(text):
     return person_list
 
 
+def setup_argparser():
+    msg = 'Get names from texts'
+    parser = argparse.ArgumentParser(
+        description='',
+        usage=f"python %(prog)s [OPTIONS]\n\n{msg}",
+        # ArgumentDefaultsHelpFormatter
+        # HelpFormatter
+        # RawDescriptionHelpFormatter
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    parser.add_argument('-m', '--method', metavar='METHOD', dest='method', choices=[1],
+                        default=1, type=int, help='Method to use for extracting the names from texts.')
+    parser.add_argument(
+        '-d', '--download', action='store_true',
+        help='Whether to download the nltk packages: punkt, averaged_perceptron_tagger, '
+             'maxent_ne_chunker, words ')
+    return parser
+
+
 if __name__ == '__main__':
-    method = 1
-    download = False
+    parser = setup_argparser()
+    args = parser.parse_args()
     texts = [text1, text2, text3, text4]
-    if download:
+    if args.download:
         download_packages()
+    print(f'Extracting names with method #{args.method}\n')
+    time.sleep(1)
     for i, text in enumerate(texts, start=1):
         names = get_human_names(text)
-        print(f'## Text{i} ##')
-        if method == 1:
+        print("#########")
+        print(f'# Text{i} #')
+        print("#########")
+        if args.method == 1:
             print("LAST, FIRST")
             print("-----------")
             for name in names:
                 last_first = HumanName(name).last + ', ' + HumanName(name).first
                 print(last_first)
             print()
-            time.sleep(1)
+        else:
+            print(f'Unsupported method #{args.method}')
