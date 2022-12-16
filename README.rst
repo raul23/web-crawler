@@ -137,8 +137,6 @@ Misc
 ----
 1. Extract names from text
 ''''''''''''''''''''''''''
-`:warning:` TODO
-
 Method 1: ``nltk`` + part of speech tag ``NNP``
 ```````````````````````````````````````````````
 From the  `stackoverflow user 'e h' <https://stackoverflow.com/q/20290870>`_:
