@@ -183,7 +183,7 @@ From the  `stackoverflow user 'e h' <https://stackoverflow.com/q/20290870>`_:
 
 `:information_source:`
 
-  The `stackoverflow user 'Gihan Gamage' <https://stackoverflow.com/questions/20290870/improving-the-extraction-of-human-names-with-nltk#comment108366804_20290870>`_ suggests downloading the nltk packages after the import statements.
+  The `stackoverflow user 'Gihan Gamage' <https://stackoverflow.com/questions/20290870/improving-the-extraction-of-human-names-with-nltk#comment108366804_20290870>`_ suggests downloading the following nltk packages after the import statements: punkt, averaged_perceptron_tagger, maxent_ne_chunker, words
 
 The script can be found at `get_names_from_text.py <./exercises/get_names_from_text.py>`_. To run it on the `four texts <./exercises/get_names_from_text.py#L2>`_::
 
