@@ -26,7 +26,7 @@ This is the environment on which the script was tested:
 
 * **Platforms:** macOS
 * **Python**: versions **3.7** and **3.8**
-* `beautifulsoup4 <https://www.crummy.com/software/BeautifulSoup/>`_ **v4.11.1**, for screen-scraping
+* `beautifulsoup4 <https://www.crummy.com/software/BeautifulSoup/>`_: **v4.11.1**, for screen-scraping
 
 `:information_source:` The built-in module ``urllib`` is used for sending HTTP requests.
 
