@@ -125,8 +125,6 @@ Run the script by specifying the paths to the `pickle file <#get-physicists-urls
 - ``--log-format only_msg``: display only the logging message without the timestamp or the logging level
 - ``--log-level debug``: display all logging messages with the ``debug`` logging level
    
-  Check `List of options <#list-of-options-for-download-wiki-pages-py>`_ to know more about the other options you can use.
-   
 `:star:` In order to stop the script at any moment, press ``ctrl`` + ``c``.
 
 List of options for ``download_wiki_pages.py``
