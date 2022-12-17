@@ -108,7 +108,7 @@ This is the environment on which the script was tested:
 * **Platforms:** macOS
 * **Python**: versions **3.7** and **3.8**
 * `requests <https://requests.readthedocs.io/en/latest/>`_: **v2.28.1**, for sending HTTP GET requests
-* `beautifulsoup4 <https://www.crummy.com/software/BeautifulSoup/>`_ **v4.11.1**, for screen-scraping
+* `beautifulsoup4 <https://www.crummy.com/software/BeautifulSoup/>`_: **v4.11.1**, for screen-scraping
 
 Usage for ``download_wiki_pages.py``
 ''''''''''''''''''''''''''''''''''''
