@@ -154,16 +154,12 @@ HTTP requests options:
 
 `:warning:` Don't use a delay (``-d``) too short (e.g. 0.5 second between HTTP requests) because you will overwhelm the server and your IP address will eventually get banned.
 
-`:star:`
-
-The following are **required** input/ouput arguments:
+`:star:` The following are **required** input/ouput arguments:
 
 - ``input_pickle_file`` is the path to the pickle file containing the list of URLs to theoretical physicists' Wikipedia pages.
 - ``output_directory`` is the path to the directory where the Wikipedia pages and corresponding images will be saved.
 
-`:information_source:`
-
-Logging formatters to choose from:
+`:information_source:` Logging formatters to choose from:
 
 - **console**: ``%(asctime)s | %(levelname)-8s | %(message)s``
 - **only_msg**: ``%(message)s``
