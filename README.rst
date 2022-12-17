@@ -16,9 +16,9 @@ This script outputs a list of URLs to Wikipedia pages of theoretical physicsts t
 
 `:information_source:`
 
-  - The Python script can be found at `get_physicists_urls.py <./exercises/get_physicists_urls.py>`_
-  - The Python script saves the list of URLs as a pickle file
-  - For more information about the script's usage, check the `Usage <#usage-for-get-physicists-urls-py>`_ section.
+- The Python script can be found at `get_physicists_urls.py <./exercises/get_physicists_urls.py>`_
+- The Python script saves the list of URLs as a pickle file
+- For more information about the script's usage, check the `Usage <#usage-for-get-physicists-urls-py>`_ section.
 
 Dependencies
 ''''''''''''
@@ -46,9 +46,9 @@ Showing the first 4 URLs in the list::
 
 `:information_source:`
 
-  - ``~/Data/wikipedia/list_physicists_urls.pkl``: pickle file that will contain the list of URLs to Wikipedia 
-    pages of theoretical physicists
-  - ``-d 3``: three seconds between HTTP requests 
+- ``~/Data/wikipedia/list_physicists_urls.pkl``: pickle file that will contain the list of URLs to Wikipedia 
+ pages of theoretical physicists
+- ``-d 3``: three seconds between HTTP requests 
    
   Check `List of options <#list-of-options-for-get-physicists-urls-py>`_ to know more about the other options you can use.
 
@@ -78,9 +78,9 @@ This script takes as input a pickle file containing URLs to Wikipedia pages of t
 
 `:information_source:`
 
-  - The Python script can be found at `download_wiki_pages.py <./exercises/download_wiki_pages.py>`_ 
-  - By default, there is a delay of 2 seconds between HTTP requests.
-  - For more information about the script's usage, check the `Usage <#usage-for-download-wiki-pages-py>`_ section.
+- The Python script can be found at `download_wiki_pages.py <./exercises/download_wiki_pages.py>`_ 
+- By default, there is a delay of 2 seconds between HTTP requests.
+- For more information about the script's usage, check the `Usage <#usage-for-download-wiki-pages-py>`_ section.
 
 Here are the general steps used by the script for downloading the Wikipedia pages with the corresponding images:
 
@@ -120,11 +120,11 @@ Run the script by specifying the paths to the `pickle file <#get-physicists-urls
    
 `:information_source:`
 
-  - ``~/Data/wikipedia/list_physicists_urls.pkl``: pickle file containing the list of URLs to Wikipedia 
-    pages of theoretical physicists (See the previous script `get_physicists_urls.py <#get-physicists-urls-py-get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_)
-  - ``~/Data/wikipedia/physicists/``: ouput directory where the downloaded Wikipedia pages will be saved
-  - ``--log-format only_msg``: display only the logging message without the timestamp or the logging level
-  - ``--log-level debug``: display all logging messages with the ``debug`` logging level
+- ``~/Data/wikipedia/list_physicists_urls.pkl``: pickle file containing the list of URLs to Wikipedia 
+ pages of theoretical physicists (See the previous script `get_physicists_urls.py <#get-physicists-urls-py-get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_)
+- ``~/Data/wikipedia/physicists/``: ouput directory where the downloaded Wikipedia pages will be saved
+- ``--log-format only_msg``: display only the logging message without the timestamp or the logging level
+- ``--log-level debug``: display all logging messages with the ``debug`` logging level
    
   Check `List of options <#list-of-options-for-download-wiki-pages-py>`_ to know more about the other options you can use.
    
@@ -157,18 +157,18 @@ HTTP requests options:
 
 `:star:`
 
-  The following are **required** input/ouput arguments:
-  
-  - ``input_pickle_file`` is the path to the pickle file containing the list of URLs to theoretical physicists' Wikipedia pages.
-  - ``output_directory`` is the path to the directory where the Wikipedia pages and corresponding images will be saved.
+The following are **required** input/ouput arguments:
+
+- ``input_pickle_file`` is the path to the pickle file containing the list of URLs to theoretical physicists' Wikipedia pages.
+- ``output_directory`` is the path to the directory where the Wikipedia pages and corresponding images will be saved.
 
 `:information_source:`
 
-  Logging formatters to choose from:
+Logging formatters to choose from:
 
-  - **console**: ``%(asctime)s | %(levelname)-8s | %(message)s``
-  - **only_msg**: ``%(message)s``
-  - **simple**: ``%(levelname)-8s %(message)s``
+- **console**: ``%(asctime)s | %(levelname)-8s | %(message)s``
+- **only_msg**: ``%(message)s``
+- **simple**: ``%(levelname)-8s %(message)s``
 
 Exercises
 =========
@@ -176,8 +176,8 @@ Exercises
 --------------------------------------------------
 `:information_source:`
 
-  - **DOB:** *Date of Birth*
-  - **DOD:** *Date of Death*
+- **DOB:** *Date of Birth*
+- **DOD:** *Date of Death*
 
 `:warning:` TODO
 
