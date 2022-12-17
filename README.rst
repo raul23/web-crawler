@@ -101,7 +101,7 @@ Here are the general steps used by the script for downloading the Wikipedia page
 
 Dependencies for **download_wiki_pages.py**
 '''''''''''''''''''''''''''''''''''''''''''
-This is the environment on which the script was tested:
+This is the environment on which the script ``download_wiki_pages.py`` was tested:
 
 * **Platforms:** macOS
 * **Python**: versions **3.7** and **3.8**
