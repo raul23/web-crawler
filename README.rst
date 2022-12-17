@@ -16,9 +16,9 @@ This script outputs a list of URLs to Wikipedia pages of theoretical physicsts t
 
 `:information_source:`
 
-- The Python script can be found at `get_physicists_urls.py <./exercises/get_physicists_urls.py>`_
-- The Python script saves the list of URLs as a pickle file
-- For more information about the script's usage, check the `Usage <#usage-for-get-physicists-urls-py>`_ section.
+   - The Python script can be found at `get_physicists_urls.py <./exercises/get_physicists_urls.py>`_
+   - The Python script saves the list of URLs as a pickle file
+   - For more information about the script's usage, check the `Usage <#usage-for-get-physicists-urls-py>`_ section.
 
 Dependencies
 ''''''''''''
@@ -46,9 +46,9 @@ Showing the first 4 URLs in the list::
 
 `:information_source:`
 
-- ``~/Data/wikipedia/list_physicists_urls.pkl``: pickle file that will contain the list of URLs to Wikipedia 
-  pages of theoretical physicists
-- ``-d 3``: three seconds between HTTP requests 
+   - ``~/Data/wikipedia/list_physicists_urls.pkl``: pickle file that will contain the list of URLs to Wikipedia 
+     pages of theoretical physicists
+   - ``-d 3``: three seconds between HTTP requests 
 
 List of options for ``get_physicists_urls.py``
 ``````````````````````````````````````````````
@@ -76,9 +76,9 @@ This script takes as input a pickle file containing URLs to Wikipedia pages of t
 
 `:information_source:`
 
-- The Python script can be found at `download_wiki_pages.py <./exercises/download_wiki_pages.py>`_ 
-- By default, there is a delay of 2 seconds between HTTP requests.
-- For more information about the script's usage, check the `Usage <#usage-for-download-wiki-pages-py>`_ section.
+   - The Python script can be found at `download_wiki_pages.py <./exercises/download_wiki_pages.py>`_ 
+   - By default, there is a delay of 2 seconds between HTTP requests.
+   - For more information about the script's usage, check the `Usage <#usage-for-download-wiki-pages-py>`_ section.
 
 Here are the general steps used by the script for downloading the Wikipedia pages with the corresponding images:
 
