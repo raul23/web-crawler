@@ -82,7 +82,7 @@ This script takes as input a pickle file containing URLs to Wikipedia pages of t
   - By default, there is a delay of 2 seconds between HTTP requests.
   - For more information about the script's usage, check the `Usage <#usage-for-download-wiki-pages-py>`_ section.
 
-Here are the general steps for downloading the Wikipedia pages with the corresponding images:
+Here are the general steps used by the script for downloading the Wikipedia pages with the corresponding images:
 
 1. Load the pickle file containing the list of URLs which was generated from the `previous script <#get-physicists-urls-py-get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_
 2. For each URL, 
