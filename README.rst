@@ -121,7 +121,7 @@ Run the script by specifying the paths to the `pickle file <#get-physicists-urls
 `:information_source:`
 
   - ``~/Data/wikipedia/list_physicists_urls.pkl``: pickle file containing the list of URLs to Wikipedia 
-    pages of theoretical physicists (See `get_physicists_urls.py <#get-physicists-urls-py-get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_`_)
+    pages of theoretical physicists (See `get_physicists_urls.py <#get-physicists-urls-py-get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_)
   - ``~/Data/wikipedia/physicists/``: ouput directory where the downloaded Wikipedia pages will be saved
   - ``--log-format only_msg``: display only the logging message without the timestamp or the logging level
   - ``--log-level debug``: display all logging messages with the ``debug`` logging level
