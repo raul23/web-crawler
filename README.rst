@@ -54,7 +54,7 @@ List of options for ``get_physicists_urls.py``
 ``````````````````````````````````````````````
 To display the script's list of options and their descriptions, use the ``-h`` option::
 
-   $ pyton get_physicists_urls.py -h
+   $ python get_physicists_urls.py -h
 
    usage: python get_physicists_urls.py [OPTIONS] {pickle_file}
 
