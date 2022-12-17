@@ -16,7 +16,7 @@ This script outputs a list of URLs to Wikipedia pages of theoretical physicsts t
 
 `:information_source:`
 
-   - The Python script can be found at `get_physicists_urls.py <./exercises/get_physicists_urls.py>`_
+   - The Python script can be found at `get_physicists_urls.py <./scripts/get_physicists_urls.py>`_
    - The Python script saves the list of URLs as a pickle file
    - For more information about the script's usage, check the `Usage <#usage-for-get-physicists-urls-py>`_ section.
 
@@ -72,11 +72,11 @@ To display the script's list of options and their descriptions, use the ``-h`` o
 
 ``download_wiki_pages.py``: Download Wikipedia pages of theoretical physicists
 ------------------------------------------------------------------------------
-This script takes as input a pickle file containing URLs to Wikipedia pages of theoretical physicists (See the script `get_physicists_urls.py <#get-physicists-urls-py-get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_).
+This script takes as input a pickle file containing URLs to Wikipedia pages of theoretical physicists (See the previous script `get_physicists_urls.py <#get-physicists-urls-py-get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_).
 
 `:information_source:`
 
-   - The Python script can be found at `download_wiki_pages.py <./exercises/download_wiki_pages.py>`_ 
+   - The Python script can be found at `download_wiki_pages.py <./scripts/download_wiki_pages.py>`_ 
    - By default, there is a delay of 2 seconds between HTTP requests.
    - For more information about the script's usage, check the `Usage <#usage-for-download-wiki-pages-py>`_ section.
 
