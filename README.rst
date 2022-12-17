@@ -20,9 +20,9 @@ This script outputs a list of URLs to Wikipedia pages of theoretical physicsts t
    - The Python script saves the list of URLs as a pickle file
    - For more information about the script's usage, check the `Usage <#usage-for-get-physicists-urls-py>`_ section.
 
-Dependencies
-''''''''''''
-This is the environment on which the script was tested:
+Dependencies for **get_physicists_urls.py**
+'''''''''''''''''''''''''''''''''''''''''''
+This is the environment on which the script ``get_physicists_urls.py`` was tested:
 
 * **Platforms:** macOS
 * **Python**: versions **3.7** and **3.8**
@@ -99,8 +99,8 @@ Here are the general steps used by the script for downloading the Wikipedia page
    <p align="center"><img src="./images/ex2_output.png"></p>
    <p align="center"><img src="./images/wikipedia_directory.png"></p>
 
-Dependencies
-''''''''''''
+Dependencies for **download_wiki_pages.py**
+'''''''''''''''''''''''''''''''''''''''''''
 This is the environment on which the script was tested:
 
 * **Platforms:** macOS
