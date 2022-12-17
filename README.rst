@@ -10,7 +10,15 @@ Scripts
 =======
 ``get_physicists_urls.py``: Get list of URLs to Wikipedia pages of theoretical physicists
 -----------------------------------------------------------------------------------------
-This script is from `Exercise 1 <#get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_. It outputs a list of URLs to Wikipedia pages of theoretical physicsts that is saved as a pickle file.
+Starting from `Category:Theoretical physicists <https://en.wikipedia.org/w/index.php?title=Category:Theoretical_physicists>`_, get all the absolute URLs of theoretical physicists' Wikipedia pages by processing the list of relative URLs in the section **Pages in category "Theoretical physicists"** and crawling through the next pages until no more *next page* found.
+
+This script outputs a list of URLs to Wikipedia pages of theoretical physicsts that is saved as a pickle file.
+
+`:information_source:`
+
+  - The Python script can be found at `get_physicists_urls.py <./exercises/get_physicists_urls.py>`_
+  - The Python script saves the list of URLs as a pickle file
+  - For more information about the script's usage, check the `Usage <#usage-for-get-physicists-urls-py>`_ section.
 
 Dependencies
 ''''''''''''
@@ -29,7 +37,13 @@ Run the script ``get_physicists_urls.py``
 Run the script by specifying the path of the pickle that will contain the list of URLs::
 
    $ pyton get_physicists_urls.py ~/Data/wikipedia/list_physicists_urls.pkl -d 3
+
+Showing the first 4 URLs in the list::
+
+   ipdb> list_physicists_urls[:4]
    
+   ['https://en.wikipedia.org//wiki/Alexei_Abrikosov_(physicist)', 'https://en.wikipedia.org//wiki/Vadym_Adamyan', 'https://en.wikipedia.org//wiki/David_Adler_(physicist)', 'https://en.wikipedia.org//wiki/Diederik_Aerts']
+
 `:information_source:`
 
   - ``~/Data/wikipedia/list_physicists_urls.pkl``: pickle file that will contain the list of URLs to Wikipedia 
@@ -60,7 +74,32 @@ To display the script's list of options and their descriptions, use the ``-h`` o
 
 ``download_wiki_pages.py``: Download Wikipedia pages of theoretical physicists
 ------------------------------------------------------------------------------
-This script is from `Exercise 2 <#download-wikipedia-pages>`_. It takes as input a pickle file containing URLs to Wikipedia pages of theoretical physicists (see `Exercise 1 <#get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_).
+This script takes as input a pickle file containing URLs to Wikipedia pages of theoretical physicists (see the script `get_physicists_urls.py <#get-physicists-urls-py-get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_).
+
+`:information_source:`
+
+  - The Python script can be found at `download_wiki_pages.py <./exercises/download_wiki_pages.py>`_ 
+  - By default, there is a delay of 2 seconds between HTTP requests.
+  - For more information about the script's usage, check the `Usage <#usage-for-download-wiki-pages-py>`_ section.
+
+Here are the general steps for downloading the Wikipedia pages with the corresponding images:
+
+1. Load the pickle file containing the list of URLs which was generated from the `previous script <#get-physicists-urls-py-get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_
+2. For each URL, 
+
+   1. download the associated Wikipedia page (html only) with the ``requests`` package
+   2. download the corresponding image if it is found in the info box (i.e. in a ``<td>`` tag with the ``infobox-image`` class): e.g. `Alexei Abrikosov <https://en.wikipedia.org/wiki/Alexei_Abrikosov_(physicist)>`_
+   3. if no image is found in the info-box, then try to get it as a thumb picture (i.e. in a ``<div>`` tag with the ``thumbinner`` class): e.g. `Oriol Bohigas Martí <https://en.wikipedia.org/wiki/Oriol_Bohigas_Mart%C3%AD>`_ 
+3. Every Wikipedia page (html) and its corresponing image are saved locally within a directory as specified by the user
+4. Useful information for the casual user is printed in the console (important messages are colored, e.g. warning that an image couldn't be downloaded) and the logger hides the rest of the information useful for debugging
+
+.. https://archive.vn/mu9PH
+.. https://archive.vn/Na9fK
+
+.. raw:: html
+
+   <p align="center"><img src="./images/ex2_output.png"></p>
+   <p align="center"><img src="./images/wikipedia_directory.png"></p>
 
 Dependencies
 ''''''''''''
