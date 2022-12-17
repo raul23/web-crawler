@@ -10,7 +10,7 @@ from urllib.parse import unquote, urlparse
 
 import requests
 from bs4 import BeautifulSoup
-import ipdb
+# import ipdb
 logger = logging.getLogger('downloader')
 __version__ = '0.1'
 QUIET = False
@@ -134,7 +134,7 @@ class Downloader:
             self.urls_info['webpages_status'][page_url].setdefault('status_page',
                                                                    f'HTTP status code: {response.status_code}')
             self.urls_info['webpages_not_downloaded'].add(page_url)
-        return response
+        return response.status_code, response.text
 
     def _get_response(self, url):
         try:
@@ -174,6 +174,7 @@ class Downloader:
         list_physicists_urls = load_pickle(self.input_pickle_file)
         total_nb_urls = len(list_physicists_urls)
         logger.info(f'Number of URLs: {total_nb_urls}')
+        mkdir(self.output_directory)
         print_('')
         for i, page_url in enumerate(list_physicists_urls):
             page_url = unquote(page_url)
@@ -423,6 +424,19 @@ def load_pickle(filepath):
         raise
     else:
         return data
+
+
+def mkdir(path):
+    # Since path can be relative to the cwd
+    path = os.path.abspath(path)
+    dirname = os.path.basename(path)
+    if os.path.exists(path):
+        logger.debug(f"Folder already exits: {path}")
+        logger.debug(f"Skipping it!")
+    else:
+        logger.debug(f"Creating folder '{dirname}': {path}")
+        os.mkdir(path)
+        logger.debug("Folder created!")
 
 
 def namespace_to_dict(ns):
