@@ -47,10 +47,8 @@ Showing the first 4 URLs in the list::
 `:information_source:`
 
 - ``~/Data/wikipedia/list_physicists_urls.pkl``: pickle file that will contain the list of URLs to Wikipedia 
- pages of theoretical physicists
+  pages of theoretical physicists
 - ``-d 3``: three seconds between HTTP requests 
-   
-  Check `List of options <#list-of-options-for-get-physicists-urls-py>`_ to know more about the other options you can use.
 
 List of options for ``get_physicists_urls.py``
 ``````````````````````````````````````````````
