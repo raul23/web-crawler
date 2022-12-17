@@ -8,7 +8,7 @@ Web crawler + scraper
 
 Scripts
 =======
-``get_physicists_urls.py``: Get list of URLs to Wikipedia pages of theoretical physicists
+**get_physicists_urls.py**: Get list of URLs to Wikipedia pages of theoretical physicists
 -----------------------------------------------------------------------------------------
 Starting from `Category:Theoretical physicists <https://en.wikipedia.org/w/index.php?title=Category:Theoretical_physicists>`_, get all the absolute URLs of theoretical physicists' Wikipedia pages by processing the list of relative URLs in the section **Pages in category "Theoretical physicists"** and crawling through the next pages until no more *next page* is found.
 
@@ -30,9 +30,9 @@ This is the environment on which the script was tested:
 
 `:information_source:` The built-in module ``urllib`` is used for sending HTTP requests.
 
-Usage for ``get_physicists_urls.py``
+Usage for **get_physicists_urls.py**
 ''''''''''''''''''''''''''''''''''''
-Run the script ``get_physicists_urls.py``
+Run the script **get_physicists_urls.py**
 `````````````````````````````````````````
 Run the script by specifying the path of the pickle that will contain the list of URLs::
 
@@ -50,7 +50,7 @@ Showing the first 4 URLs in the list::
      pages of theoretical physicists
    - ``-d 3``: three seconds between HTTP requests 
 
-List of options for ``get_physicists_urls.py``
+List of options for **get_physicists_urls.py**
 ``````````````````````````````````````````````
 To display the script's list of options and their descriptions, use the ``-h`` option::
 
@@ -70,7 +70,7 @@ To display the script's list of options and their descriptions, use the ``-h`` o
 
 `:warning:` Don't use a delay (``-d``) too short (e.g. 0.5 second between HTTP requests) because you will overwhelm the server and your IP address will eventually get banned.
 
-``download_wiki_pages.py``: Download Wikipedia pages of theoretical physicists
+**download_wiki_pages.py**: Download Wikipedia pages of theoretical physicists
 ------------------------------------------------------------------------------
 This script takes as input a pickle file containing URLs to Wikipedia pages of theoretical physicists (See the previous script `get_physicists_urls.py <#get-physicists-urls-py-get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_).
 
@@ -108,9 +108,9 @@ This is the environment on which the script was tested:
 * `requests <https://requests.readthedocs.io/en/latest/>`_: **v2.28.1**, for sending HTTP GET requests
 * `beautifulsoup4 <https://www.crummy.com/software/BeautifulSoup/>`_: **v4.11.1**, for screen-scraping
 
-Usage for ``download_wiki_pages.py``
+Usage for **download_wiki_pages.py**
 ''''''''''''''''''''''''''''''''''''
-Run the script ``download_wiki_pages.py``
+Run the script **download_wiki_pages.py**
 ``````````````````````````````````````````
 Run the script by specifying the paths to the `pickle file <#get-physicists-urls-py-get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_ and the ouput directory where the downloaded Wikipedia pages will be saved::
 
@@ -127,7 +127,7 @@ Run the script by specifying the paths to the `pickle file <#get-physicists-urls
    
 `:star:` In order to stop the script at any moment, press ``ctrl`` + ``c``.
 
-List of options for ``download_wiki_pages.py``
+List of options for **download_wiki_pages.py**
 ``````````````````````````````````````````````
 To display the script's list of options and their descriptions, use the ``-h`` option::
 
