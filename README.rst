@@ -116,7 +116,7 @@ Run the script by specifying the paths to the `pickle file <#get-physicists-urls
 
    $ pyton download_wiki_pages.py ~/Data/wikipedia/list_physicists_urls.pkl ~/Data/wikipedia/physicists/ --log-format only_msg --log-level debug
    
-`:information_source:`
+`:information_source:` Explanations about the arguments in the previous command:
 
 - ``~/Data/wikipedia/list_physicists_urls.pkl``: pickle file containing the list of URLs to Wikipedia 
   pages of theoretical physicists (See the previous script `get_physicists_urls.py 
