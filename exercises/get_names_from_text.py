@@ -119,7 +119,7 @@ def setup_argparser():
     parser.add_argument(
         '-d', '--download', action='store_true',
         help='Whether to download the nltk packages: punkt, averaged_perceptron_tagger, '
-             'maxent_ne_chunker, words ')
+             'maxent_ne_chunker, words')
     return parser
 
 
