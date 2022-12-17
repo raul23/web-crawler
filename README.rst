@@ -114,7 +114,7 @@ Usage for ``download_wiki_pages.py``
 ''''''''''''''''''''''''''''''''''''
 Run the script ``download_wiki_pages.py``
 ``````````````````````````````````````````
-Run the script by specifying the paths to the `pickle file <#get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_ and the ouput directory where the downloaded Wikipedia pages will be saved::
+Run the script by specifying the paths to the `pickle file <#get-physicists-urls-py-get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_ and the ouput directory where the downloaded Wikipedia pages will be saved::
 
    $ pyton download_wiki_pages.py ~/Data/wikipedia/list_physicists_urls.pkl ~/Data/wikipedia/physicists/ --log-format only_msg --log-level debug
    
