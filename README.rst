@@ -8,7 +8,7 @@ Web crawler + scraper
 
 Scripts
 =======
-**get_physicists_urls.py**: Get list of URLs to Wikipedia pages of theoretical physicists
+``get_physicists_urls.py``: Get list of URLs to Wikipedia pages of theoretical physicists
 -----------------------------------------------------------------------------------------
 Starting from `Category:Theoretical physicists <https://en.wikipedia.org/w/index.php?title=Category:Theoretical_physicists>`_, get all the absolute URLs of theoretical physicists' Wikipedia pages by processing the list of relative URLs in the section **Pages in category "Theoretical physicists"** and crawling through the next pages until no more *next page* is found.
 
@@ -70,7 +70,7 @@ To display the script's list of options and their descriptions, use the ``-h`` o
 
 `:warning:` Don't use a delay (``-d``) too short (e.g. 0.5 second between HTTP requests) because you will overwhelm the server and your IP address will eventually get banned.
 
-**download_wiki_pages.py**: Download Wikipedia pages of theoretical physicists
+``download_wiki_pages.py``: Download Wikipedia pages of theoretical physicists
 ------------------------------------------------------------------------------
 This script takes as input a pickle file containing URLs to Wikipedia pages of theoretical physicists (See the previous script `get_physicists_urls.py <#get-physicists-urls-py-get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_).
 
