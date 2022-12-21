@@ -87,7 +87,7 @@ Here are the general steps used by the script for downloading the Wikipedia page
 
    1. If the Wikipedia page (html only) is not already found saved locally, then download it with the ``requests`` package
    2. If the corresponding image is not already found saved locally, then download it by searching first if it is in the 
-      info box (i.e. in a ``<td>`` tag with the ``infobox-image`` class): e.g. 
+      info-box (i.e. in a ``<td>`` tag with the ``infobox-image`` class): e.g. 
       `Alexei Abrikosov <https://en.wikipedia.org/wiki/Alexei_Abrikosov_(physicist)>`_
    3. If no image is found in the info-box, then try to get it as a thumb picture (i.e. in a ``<div>`` tag with 
       the ``thumbinner`` class): e.g. `Oriol Bohigas Martí <https://en.wikipedia.org/wiki/Oriol_Bohigas_Mart%C3%AD>`_ 
