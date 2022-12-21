@@ -85,9 +85,12 @@ Here are the general steps used by the script for downloading the Wikipedia page
 1. Load the pickle file containing the list of URLs which was generated from the `previous script <#get-physicists-urls-py-get-list-of-urls-to-wikipedia-pages-of-theoretical-physicists>`_
 2. For each URL, 
 
-   1. download the associated Wikipedia page (html only) with the ``requests`` package
-   2. download the corresponding image if it is found in the info box (i.e. in a ``<td>`` tag with the ``infobox-image`` class): e.g. `Alexei Abrikosov <https://en.wikipedia.org/wiki/Alexei_Abrikosov_(physicist)>`_
-   3. if no image is found in the info-box, then try to get it as a thumb picture (i.e. in a ``<div>`` tag with the ``thumbinner`` class): e.g. `Oriol Bohigas Martí <https://en.wikipedia.org/wiki/Oriol_Bohigas_Mart%C3%AD>`_ 
+   1. If the Wikipedia page (html only) is not already found saved locally, then download it with the ``requests`` package
+   2. If the corresponding image is not already found saved locally, then download it by searching first if it is in the 
+      info box (i.e. in a ``<td>`` tag with the ``infobox-image`` class): e.g. 
+      `Alexei Abrikosov <https://en.wikipedia.org/wiki/Alexei_Abrikosov_(physicist)>`_
+   3. If no image is found in the info-box, then try to get it as a thumb picture (i.e. in a ``<div>`` tag with 
+      the ``thumbinner`` class): e.g. `Oriol Bohigas Martí <https://en.wikipedia.org/wiki/Oriol_Bohigas_Mart%C3%AD>`_ 
 3. Every Wikipedia page (html) and its corresponing image are saved locally within a directory as specified by the user
 4. Useful information for the casual user is printed in the console (important messages are colored, e.g. warning that an image couldn't be downloaded) and the logger hides the rest of the information useful for debugging
 
